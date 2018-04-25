@@ -164,6 +164,7 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'datastore', 'vu
             this.loadData().then(response => {
                 this.dataLoaded = true;
                 this.locale = "en-ca";
+                this.property.default_logo_url = "//codecloud.cdn.speedyrails.net/sites/5a9714046e6f644dc3160000/image/png/1520457094000/blacklogo2.png";
             });
             window.addEventListener('scroll', this.enableStickyNavbar);
         },
