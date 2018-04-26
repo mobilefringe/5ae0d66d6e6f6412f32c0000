@@ -97,7 +97,7 @@
 	</div>
 </template>
 <script>
-    define(["Vue", "vuex", 'vue!social_links.vue', "bootstrap-vue", 'json!menu_items.json'], function (Vue, Vuex, SocialLinks, BootstrapVue, MenuItems) {
+    define(["Vue", "vuex", 'vue!social_links.vue', "bootstrap-vue"], function (Vue, Vuex, SocialLinks, BootstrapVue) {
         Vue.use(BootstrapVue);
         return Vue.component("header-component", {
             template: template, // the variable template will be injected,
