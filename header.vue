@@ -94,7 +94,6 @@
                 return {
                     dataLoaded: false,
                     show_mobile_menu: false,
-                    // property_logo: "//codecloud.cdn.speedyrails.net/sites/5a85d86f6e6f643351020000/image/png/1520614602000/PCM_Logo_InfoSheet_Feb2018 (1)-02.png",
                     menu_items: MenuItems,
                 }
             },
