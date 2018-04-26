@@ -15,7 +15,7 @@
 		    <div>
 		      <h3 class="home_page_title caps">{{$t("home_page.explore")}}</h3>
 		    </div>
-		    <div v-masonry transition-duration="0.3s" item-selector=".grid-item " >
+		    <div v-masonry transition-duration="0.3s" item-selector=".item" >
                 <div v-masonry-tile class="item" v-for="feature in feature_items" :class="'grid-item ' + feature.masonry_class ">
                     <!--<div >-->
                     	<div  :class="{ 'ih-item circle effect19' : feature.no_hover_class}"> 
