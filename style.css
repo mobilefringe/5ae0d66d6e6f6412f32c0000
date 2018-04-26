@@ -52,7 +52,7 @@ $social: #000;
 $link: #000;
 $accent : #7DC0A2;
 
-$font_family :'ProximaNova-Regular', 'Helvetica', 'Arial', sans-serif;
+$font_family :'ProximaNova', 'Helvetica', 'Arial', sans-serif;
 body {
     color:#000;
     font-family:$font_family;
