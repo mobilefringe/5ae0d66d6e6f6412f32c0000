@@ -26,10 +26,10 @@ hr{
 }
 
 @font-face {
-    font-family: 'ProximaNova-Bold';
+    font-family: 'ProximaNova';
     src: url('//codecloud.cdn.speedyrails.net/sites/59282acb6e6f647d8d520100//1497278682000/proximanova-semibold-webfont.woff2') format('woff2'),
          url('//codecloud.cdn.speedyrails.net/sites/59282acb6e6f647d8d520100/application/font-woff/1497278682000/proximanova-semibold-webfont.woff') format('woff');
-    font-weight: normal;
+    font-weight: 600;
     font-style: normal;
 }
 
