@@ -3039,7 +3039,8 @@ gallery:after{
 .contact_content {
     h4 { 
         color : $accent;
-        font-family: 'ProximaNova-Bold';
+        // font-family: 'ProximaNova-Bold';
+        font-weight:600;
     }
 }
 @media (max-width: 1300px) {
