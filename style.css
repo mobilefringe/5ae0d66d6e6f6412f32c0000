@@ -3036,7 +3036,9 @@ gallery:after{
     
 }
 .contact_content {
-    
+    h4 { 
+        color : $accent;
+    }
 }
 @media (max-width: 1300px) {
     #primary_nav ul .menu_item {
