@@ -1,7 +1,7 @@
 [
     {
         "name": "header.stores",
-        "href": "/stores",
+        "href": "#",
         "sub_menu": [{
                 "name": "header.stores",
                 "href": "/stores"
