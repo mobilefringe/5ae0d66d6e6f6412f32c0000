@@ -106,9 +106,9 @@
                     dataLoaded: false,
                     show_mobile_menu: false,
                     menu_items: MenuItems,
+                    property_logo: "//codecloud.cdn.speedyrails.net/sites/5ae0d66d6e6f6412f32c0000/image/png/1418998640000/ParklandMall-Logo-Black.png",
                 }
             },
-            props: ['property_logo'],
             watch: {
                 $route: function() {
                     // hide dropdown when route changes
