@@ -127,6 +127,7 @@
                     else {
                         document.getElementById('popup_backdrop').style.display = "none";
                     }
+                    this.$redrawVueMasonry()
                 },
                 formData () {
                     this.formData.name = this.formData.firstname + " " + this.formData.lastname; 
