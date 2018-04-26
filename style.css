@@ -18,10 +18,10 @@ hr{
 }
 
 @font-face {
-    font-family: 'ProximaNova-Light';
+    font-family: 'ProximaNova';
     src: url('//codecloud.cdn.speedyrails.net/sites/59282acb6e6f647d8d520100//1497278296000/proximanova-light-webfont.woff2') format('woff2'),
          url('//codecloud.cdn.speedyrails.net/sites/59282acb6e6f647d8d520100/application/font-woff/1497278296000/proximanova-light-webfont.woff') format('woff');
-    font-weight: normal;
+    font-weight: 300;
     font-style: normal;
 }
 
