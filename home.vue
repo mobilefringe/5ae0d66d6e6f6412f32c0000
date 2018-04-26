@@ -128,6 +128,7 @@
                         document.getElementById('popup_backdrop').style.display = "none";
                     }
                     this.$redrawVueMasonry();
+                    console.log("redreew masonary");
                 },
                 formData () {
                     this.formData.name = this.formData.firstname + " " + this.formData.lastname; 
