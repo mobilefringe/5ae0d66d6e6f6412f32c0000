@@ -37,7 +37,7 @@
 					</div>
 				</div>
 				<div class="col-sm-8 promo_image_container text-left">
-					<router-link to="/jobs"><i class="fa fa-angle-left"></i> &nbsp; {{$t("jobs_page.back_to_jobs")}}</router-link>
+					<router-link to="/employment"><i class="fa fa-angle-left"></i> &nbsp; {{$t("jobs_page.back_to_jobs")}}</router-link>
 					<h3 class="promo_name" style="margin: 20px auto 0px;" v-if="locale=='en-ca'">{{currentJob.name}}</h3>
 					<h3 class="promo_name" style="margin: 20px auto 0px;" v-else>{{currentJob.name_2}}</h3>
 					<div class="row">
@@ -68,111 +68,5 @@
 </template>
 
 <script>
-    define(['Vue', 'vuex', 'moment', 'vue-lazy-load'], function(Vue, Vuex, moment, VueLazyload) {
-        Vue.use(VueLazyload);
-        return Vue.component("job-details-component", {
-            template: template, // the variable template will be injected,
-            data: function() {
-                return {
-                    currentJob: null,
-                    storeJobs : null,
-                    storeHours : null,
-                    jobBanner : null
-                }
-            },
-            props:['id', 'locale'],
-            beforeRouteUpdate(to, from, next) {
-                this.currentJob = this.findJobBySlug(to.params.id);
-                    if (this.currentJob === null || this.currentJob === undefined){
-                        this.$router.replace('/');
-                    }
-                next();
-            },
-            created(){
-                this.loadData().then(response => {
-                    this.updateCurrentJob(this.id);
-                    var temp_repo = this.findRepoByName('Jobs Banner');
-                    if(temp_repo) {
-                        this.jobBanner = temp_repo.images[0];
-                    }
-                    // console.log(this.jobBanner);
-                    this.jobs = this.job;
-                });
-            },
-            watch: {
-                currentJob : function (){
-                    if(this.currentJob != null) {
-                        // console.log(this.currentJob.store);
-                        if (this.currentJob.store != null && this.currentJob.store != undefined && _.includes(this.currentJob.store.image_url, 'missing')) {
-                            this.currentJob.store.store_front_url_abs = this.property.default_logo_url;
-                        }
-                        else if (this.currentJob.store == null || this.currentJob.store == undefined) {
-                            this.currentJob.store = {};
-                            this.currentJob.store.store_front_url_abs =  this.property.default_logo_url;
-                        }
-                        var vm = this;
-                        var temp_job = [];
-                        var current_id =_.toNumber(this.currentJob.id);
-                        _.forEach(this.currentJob.store.jobs, function(value, key) {
-                            if(_.toNumber(value) != current_id){
-                                var current_promo = vm.findJobById(value);
-                                current_promo.description_short = _.truncate(current_promo.description, {'length': 70});
-                                temp_job.push(current_promo);
-                            }
-                        });
-                        this.storeJobs = temp_job;
-                    }
-                    if(this.currentJob.store) {
-                        var storeHours = [];
-                        var vm = this;
-                        _.forEach(this.currentJob.store.store_hours, function (value, key) {
-                            var hour = vm.findHourById(value);
-                            if(hour.day_of_week === 0){
-                                hour.order = 7;
-                            }
-                            else {
-                                hour.order = hour.day_of_week;
-                            }
-                            storeHours.push();
-                        });
-                        this.storeHours = _.sortBy(storeHours, [function(o) { return o.order; }]);;
-                    }
-                }
-            },
-            computed: {
-                ...Vuex.mapGetters([
-                    'property',
-                    'processedJobs',
-                    'findJobBySlug',
-                    'findJobById',
-                    'timezone',
-                    'findRepoByName',
-                    'findHourById'
-                ]),
-                allJobs() {
-                    return this.processedJobs;
-                },
-            },
-            methods: {
-                updateCurrentJob (id) {
-                    this.currentJob = this.findJobBySlug(id);
-                    if (this.currentJob === null || this.currentJob === undefined){
-                        this.$router.replace('/');
-                    }
-                },
-                loadData: async function() {
-                    try {
-                        // avoid making LOAD_META_DATA call for now as it will cause the entire Promise.all to fail since no meta data is set up.
-                        let results = await Promise.all([this.$store.dispatch("getData", "jobs"), this.$store.dispatch("getData", "repos")]);
-                    } catch (e) {
-                        console.log("Error loading data: " + e.message);
-                    }
-                },
-                shareURL(slug){
-                    var share_url = "http://bonniedoonshoppingcentre.com/jobs/" + slug;
-                    return share_url;
-                },
-            }
-        });
-    });
+var _extends=Object.assign||function(t){for(var r=1;r<arguments.length;r++){var e=arguments[r];for(var o in e)Object.prototype.hasOwnProperty.call(e,o)&&(t[o]=e[o])}return t};define(["Vue","vuex","moment","vue-lazy-load"],function(t,r,e,o){return t.use(o),t.component("job-details-component",{template:template,data:function(){return{currentJob:null,storeJobs:null,storeHours:null,jobBanner:null}},props:["id","locale"],beforeRouteUpdate:function(t,r,e){this.currentJob=this.findJobBySlug(t.params.id),(null===this.currentJob||void 0===this.currentJob)&&this.$router.replace("/"),e()},created:function(){var t=this;this.loadData().then(function(){t.updateCurrentJob(t.id);var r=t.findRepoByName("Jobs Banner");r&&(t.jobBanner=r.images[0]),t.jobs=t.job})},watch:{currentJob:function(){if(null!=this.currentJob){null!=this.currentJob.store&&void 0!=this.currentJob.store&&_.includes(this.currentJob.store.image_url,"missing")?this.currentJob.store.store_front_url_abs=this.property.default_logo_url:(null==this.currentJob.store||void 0==this.currentJob.store)&&(this.currentJob.store={},this.currentJob.store.store_front_url_abs=this.property.default_logo_url);var t=this,r=[],e=_.toNumber(this.currentJob.id);_.forEach(this.currentJob.store.jobs,function(o){if(_.toNumber(o)!=e){var n=t.findJobById(o);n.description_short=_.truncate(n.description,{length:70}),r.push(n)}}),this.storeJobs=r}if(this.currentJob.store){var o=[],t=this;_.forEach(this.currentJob.store.store_hours,function(r){var e=t.findHourById(r);e.order=0===e.day_of_week?7:e.day_of_week,o.push()}),this.storeHours=_.sortBy(o,[function(t){return t.order}])}}},computed:_extends({},r.mapGetters(["property","processedJobs","findJobBySlug","findJobById","timezone","findRepoByName","findHourById"]),{allJobs:function(){return this.processedJobs}}),methods:{updateCurrentJob:function(t){this.currentJob=this.findJobBySlug(t),(null===this.currentJob||void 0===this.currentJob)&&this.$router.replace("/")},loadData:function(){var t;return regeneratorRuntime.async(function(r){for(;;)switch(r.prev=r.next){case 0:return r.prev=0,r.next=3,regeneratorRuntime.awrap(Promise.all([this.$store.dispatch("getData","jobs"),this.$store.dispatch("getData","repos")]));case 3:t=r.sent,r.next=9;break;case 6:r.prev=6,r.t0=r["catch"](0),console.log("Error loading data: "+r.t0.message);case 9:case"end":return r.stop()}},null,this,[[0,6]])},shareURL:function(t){var r="http://bonniedoonshoppingcentre.com/jobs/"+t;return r}}})});
 </script>
