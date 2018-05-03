@@ -26,15 +26,15 @@
         "href": "/events",
         "sub_menu": [{
                 "name": "header.press_releases",
-                "href": "/press_releases"
+                "href": "/pages/parkland-awards"
             },
             {
                 "name": "header.kidz_club",
-                "href": "/kids_club"
+                "href": "/pages/parkland-awards"
             },
             {
                 "name": "header.healthy_strides",
-                "href": "/healthy_strides"
+                "href": "/pages/parkland-awards"
             }
         ]
     },
