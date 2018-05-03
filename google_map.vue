@@ -36,16 +36,12 @@
                 property_string = property_string.replace(/ /g,"+");
                 axios.get('https://maps.googleapis.com/maps/api/geocode/json?address='+property_string +'&key=AIzaSyCukCjH3fsuDYBdI44hZKL43m60jEToJjY').then(response => {
                     // resolve(response);
-                    console.log("response", response.data.results[0]);
                     geometry = response.data.results[0].geometry;
                     var new_pos = {};
                     new_pos.lat = geometry.location.lat;
                     new_pos.lng = geometry.location.lng;
                     this.position = new_pos;
-                    console.log(this.position)
                 });
-                // https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=AIzaSyCukCjH3fsuDYBdI44hZKL43m60jEToJjY
-                // this.initMap();
             },
             watch : {
                 position () {
@@ -56,13 +52,13 @@
                 initMap() {
             // Styles a map in night mode.
             var map = new google.maps.Map(document.getElementById('map'), {
-              center: this.position,
-              zoom: this.zoom,
-              styles: []
+                center: this.position,
+                zoom: this.zoom,
+                styles: []
             });
             var marker = new google.maps.Marker({
-              position: this.position,
-              map: map
+                position: this.position,
+                map: map
             });
           }
             }
