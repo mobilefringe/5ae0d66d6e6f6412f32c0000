@@ -23,7 +23,21 @@
     },
     {
         "name": "header.events",
-        "href": "/events"
+        "href": "/events",
+        "sub_menu": [{
+                "name": "header.stores",
+                "href": "/stores"
+            },
+            {
+                "name": "header.centre_map",
+                "href": "/map"
+            },
+            {
+                "name": "header.download_directory",
+                "href": "//codecloud.cdn.speedyrails.net/sites/5ae0d66d6e6f6412f32c0000/application/pdf/1521040285000/BD DOWNLOADABLE_Map_MARCH.pdf",
+                "external": true
+            }
+        ]
     },
     {
         "name": "header.guest_services",
