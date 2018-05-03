@@ -31,15 +31,15 @@
             },
             {
                 "name": "header.press_releases",
-                "href": "/pages/parkland-press-releases"
+                "href": "/pages/parklandmall-press-releases"
             },
             {
                 "name": "header.kidz_club",
-                "href": "/pages/parkland-kidz-club"
+                "href": "/pages/parklandmall-kidz-club"
             },
             {
                 "name": "header.healthy_strides",
-                "href": "/pages/parkland-healthy-strides"
+                "href": "/pages/parklandmall-healthy-strides"
             }
         ]
     },
@@ -48,19 +48,19 @@
         "href": "/pages/bonniedoon-services",
         "sub_menu": [{
                 "name": "header.guest_services ",
-                "href": "/pages/parkland-guest-services"
+                "href": "/pages/parklandmall-guest-services"
             },
             {
                 "name": "header.leasing",
-                "href": "/pages/parkland-leasing"
+                "href": "/pages/parklandmall-leasing"
             },
             {
                 "name": "header.history",
-                "href": "/pages/parkland-history"
+                "href": "/pages/parklandmall-history"
             },
             {
                 "name": "header.awards",
-                "href": "/pages/parkland-awards"
+                "href": "/pages/parklandmall-awards"
             }
         ]
     },
