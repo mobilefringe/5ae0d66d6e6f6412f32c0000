@@ -24,7 +24,12 @@
     {
         "name": "header.events",
         "href": "/events",
-        "sub_menu": [{
+        "sub_menu": [
+            {
+              "name": "header.events",
+        "href": "/events",  
+            },
+            {
                 "name": "header.press_releases",
                 "href": "/pages/parkland-awards"
             },
