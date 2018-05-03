@@ -25,7 +25,7 @@
         "name": "header.events",
         "href": "/events",
         "sub_menu": [{
-                "name": "header.stores",
+                "name": "header.press_releases",
                 "href": "/stores"
             },
             {
