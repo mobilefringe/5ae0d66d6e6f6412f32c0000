@@ -140,7 +140,7 @@
                     }
                 },
                 shareURL(slug){
-                    var share_url = "http://bonniedoonshoppingcentre.com/jobs/" + slug;
+                    var share_url = "http://parklandmall.ca/jobs/" + slug;
                     return share_url;
                 },
             }
