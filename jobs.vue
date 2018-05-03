@@ -12,7 +12,7 @@
 				<paginate name="promos" v-if="promos" :list="promos" class="paginate-list margin-60" :per="4">
 					<div class="row event_container" v-for="(promo,index) in paginated('promos')" :class="{ 'last': index === (paginated('promos').length - 1) }" :key="promo.id">
 						<div class="col-sm-6 col-md-4 event_image_container">
-							<router-link :to="'/employment/'+ promo.slug" class="event_learn_more">
+							<router-link :to="'/jobs/'+ promo.slug" class="event_learn_more">
 								<img v-lazy="promo.store.store_front_url_abs"  class="event_image image" alt=""/>
 							</router-link>
 						</div>
@@ -28,7 +28,7 @@
 							<p class="event_desc"  v-if="locale=='en-ca'">{{promo.description_short}}</p>
 							<p class="event_desc"  v-else>{{promo.description_short_2}}</p>
 							<div class="text-right  col-sm-6" v-if="promo" style="padding:0">
-								<router-link :to="'/employment/'+ promo.slug" class="event_learn_more pull-left">
+								<router-link :to="'/jobs/'+ promo.slug" class="event_learn_more pull-left">
 									{{$t("jobs_page.read_more")}} <i class="fa fa-angle-right" aria-hidden="true"></i>
 								</router-link>
 								<social-sharing :url="shareURL(promo.slug)" :title="promo.title" :description="promo.description" :quote="promo.description_short" twitter-user="BonnieDoonSC" :media="promo.image_url" inline-template >
@@ -140,7 +140,7 @@
                     }
                 },
                 shareURL(slug){
-                    var share_url = "http://parklandmall.ca/employment/" + slug;
+                    var share_url = "http://parklandmall.ca/jobs/" + slug;
                     return share_url;
                 },
             }
