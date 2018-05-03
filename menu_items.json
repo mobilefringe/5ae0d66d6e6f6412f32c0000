@@ -26,7 +26,7 @@
         "href": "/events",
         "sub_menu": [{
                 "name": "header.press_releases",
-                "href": "/stores"
+                "href": "/press_releases"
             },
             {
                 "name": "header.centre_map",
