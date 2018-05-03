@@ -167,7 +167,7 @@
                     }
                 },
                 shareURL(slug){
-                    var share_url = "http://bonniedoonshoppingcentre.com/promotions/" + slug;
+                    var share_url = "http://parklandmall.ca/promotions/" + slug;
                     return share_url;
                 },
             }
