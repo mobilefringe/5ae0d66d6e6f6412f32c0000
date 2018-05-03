@@ -42,7 +42,7 @@
         "name": "header.guest_services",
         "href": "/pages/bonniedoon-services",
         "sub_menu": [{
-                "name": "header.leasing ",
+                "name": "header.guest_services ",
                 "href": "/pages/parkland-leasing"
             },
             {
