@@ -20,7 +20,7 @@
 </template>
 
 <script>
-    define(["Vue", "vuex"], function(Vue, Vuex, moment, GoogleMapAPI) {
+    define(["Vue", "vuex", "vue!google_map"], function(Vue, Vuex, moment, GoogleMapAPI) {
         return Vue.component("find-us-component", {
             template: template, // the variable template will be injected,
             data: function() {
