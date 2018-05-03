@@ -199,7 +199,7 @@
                     }
                 },
                 shareURL(slug){
-                    var share_url = "http://bonniedoonshoppingcentre.com/events/" + slug;
+                    var share_url = "http://parklandmall.ca/events/" + slug;
                     return share_url;
                 },
             }
