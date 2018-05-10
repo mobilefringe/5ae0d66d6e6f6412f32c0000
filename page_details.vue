@@ -79,7 +79,7 @@
                         if( _.includes(id, 'press-releases') ||  _.includes(id, 'history') ) {
                             temp_repo = this.findRepoByName('Press Release and History Banner');
                         }
-                        else if ( _.includes(id, 'services')) {
+                        else if ( _.includes(id, 'guest-services') ||  _.includes(id, 'guest-services') || _.includes(id, 'guest-services') ) {
                             temp_repo = this.findRepoByName('Services Banner');
                         }
                         else if( _.includes(id, 'accessibilty')) {
