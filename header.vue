@@ -98,6 +98,7 @@
                     show_mobile_menu: false,
                     menu_items: MenuItems,
                     property_logo: "//codecloud.cdn.speedyrails.net/sites/5af46c3b6e6f644d65050000/image/png/1418998640000/ParklandMall-Logo-Black.png",
+                    property_logo_white : ""
                 }
             },
             watch: {
