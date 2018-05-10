@@ -80,7 +80,7 @@
                             temp_repo = this.findRepoByName('Press Release and History Banner');
                         }
                         else if ( _.includes(id, 'guest-services') || _.includes(id, 'awards') ) {
-                            temp_repo = this.findRepoByName('Services Banner');
+                            temp_repo = this.findRepoByName('Hours, Awards and Guest Services Banner');
                         }
                         else if( _.includes(id, 'accessibilty')) {
                             temp_repo = this.findRepoByName('Accessibility Banner');
