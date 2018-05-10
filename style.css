@@ -1288,6 +1288,9 @@ strong, .bold {
 }
 
 /* INSIDE PAGES */
+.kids_club_header {
+    color: #0f93ff;
+}
 .page_header {
     margin: 0 auto;
     margin-bottom: 40px;
