@@ -83,7 +83,7 @@
                             temp_repo = this.findRepoByName('Hours, Awards and Guest Services Banner');
                         }
                         else if( _.includes(id, 'kidz-club')) {
-                            temp_repo = this.findRepoByName('Accessibility Banner');
+                            temp_repo = this.findRepoByName('Kidz Club');
                         }
                         else if( _.includes(id, 'fashionicity')) {
                             temp_repo = this.findRepoByName('FashioniCity Banner');
