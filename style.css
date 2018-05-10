@@ -10,26 +10,26 @@ hr{
 }
 
 @font-face {
-    font-family: 'ProximaNova';
+    font-family: 'ProximaNova-Regular';
     src: url('//codecloud.cdn.speedyrails.net/sites/59282acb6e6f647d8d520100//1497295898000/proximanova-regular-webfont.woff2') format('woff2'),
          url('//codecloud.cdn.speedyrails.net/sites/59282acb6e6f647d8d520100/application/font-woff/1497295898000/proximanova-regular-webfont.woff') format('woff');
-    font-weight: 500;
+    font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'ProximaNova';
+    font-family: 'ProximaNova-Light';
     src: url('//codecloud.cdn.speedyrails.net/sites/59282acb6e6f647d8d520100//1497278296000/proximanova-light-webfont.woff2') format('woff2'),
          url('//codecloud.cdn.speedyrails.net/sites/59282acb6e6f647d8d520100/application/font-woff/1497278296000/proximanova-light-webfont.woff') format('woff');
-    font-weight: 300;
+    font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'ProximaNova';
+    font-family: 'ProximaNova-Bold';
     src: url('//codecloud.cdn.speedyrails.net/sites/59282acb6e6f647d8d520100//1497278682000/proximanova-semibold-webfont.woff2') format('woff2'),
          url('//codecloud.cdn.speedyrails.net/sites/59282acb6e6f647d8d520100/application/font-woff/1497278682000/proximanova-semibold-webfont.woff') format('woff');
-    font-weight: 600;
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -43,7 +43,7 @@ hr{
 }
 @font-face {
     font-family: 'Gibson Regular';
-    src: url('//codecloud.cdn.speedyrails.net/sites/5af46c3b6e6f644d65050000//1518627792680/Gibson-Regular.ttf')
+    src: url('//codecloud.cdn.speedyrails.net/sites/5af1ff176e6f645120180000//1518627792680/Gibson-Regular.ttf')
 }
 /* COLOUR VARIABLES */
 $primary: #004d71;
@@ -52,11 +52,10 @@ $social: #000;
 $link: #000;
 $accent : #356e54;
 
-$font_family :'ProximaNova', 'Helvetica', 'Arial', sans-serif;
+$font_family :'ProximaNova-Regular', 'Helvetica', 'Arial', sans-serif;
 body {
     color:#000;
     font-family:$font_family;
-    font-weight: 500;
     font-size: 1.25rem;
     line-height: 30px;
     overflow-x: hidden;
@@ -658,8 +657,14 @@ strong, .bold {
 	text-transform: uppercase;
 	text-decoration: none;
 	text-shadow: 0 1px 3px rgba(255,255,255,0.4);
+    white-space: normal;
 	&:hover {
 	    text-decoration: underline;
+	}
+	&:focus {
+	    outline: thin dotted;
+        outline: 5px auto -webkit-focus-ring-color;
+        outline-offset: -2px;
 	}
 }
 
@@ -684,14 +689,18 @@ strong, .bold {
 	top: 100%;
 	left: 0;
 	background: rgba(255,255,255,0.7);
+	border-radius: 0px;
 }
 
 #primary_nav ul .menu_item ul .dropdown_item {
     padding: 5px 0;
 	float: none;
-	min-width: 150px;
+	min-width: 100%;
 	font-size: 0.8rem;
 	line-height: 26px;
+	a{
+	     background: transparent;
+	}
 }
 
 #primary_nav ul ul .dropdown_item:hover {
@@ -1240,10 +1249,9 @@ strong, .bold {
         color:#fff;
         padding: 50px 0;
         text-align: center;
-        h1 {
-            font-family: cursive;
-            display:inline-block;
-            padding-right: 50px;
+        .stay_update {
+            font-size: 1.5rem;
+            line-height: 29px;
         }
         #newsletterBlogForm {
             position: relative;
@@ -1286,7 +1294,7 @@ strong, .bold {
     // padding-top: 256px;
     height: 300px;
     // background-image: url(//codecloud.cdn.speedyrails.net/sites/59282acb6e6f647d8d520100/image/png/1496078793000/shopping_banner.png);
-    // background-color: $link;
+    background-color: $accent;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1391,7 +1399,7 @@ strong, .bold {
 .ih-item.circle.effect19 .info {
     // background: $accent;
     // opacity:0.7;
-    background: rgba(125, 192, 162, .7);
+    background: rgba(53, 110, 84,0.9);
     transition: all 0.35s linear;
 }
 .ih-item.circle.effect19 .info .content {
@@ -1793,40 +1801,16 @@ strong, .bold {
             border-color: #000!important;
             background-color:#fff!important;
         }
+        .spinner {
+            font-size: 1rem;
+        }
     }
-    // .dropdown-menu {
-        // border: 1px solid $secondary;
-        // border-top: none;
-        // border-radius: 0;
-        // font-family: 'Futura-Medium';
-        // font-size: 1rem;
-        // text-transform: uppercase;
-        
-        // li {
-        //     width: 250px;
-        //     white-space: nowrap;
-        //     overflow: hidden;
-        //     text-overflow: ellipsis;
-        // }
-    //     width:100%;
-    //     color:#000;
-    //     margin-left: 0;
-    //     padding-left: 0;
-    //     li {
-    //         list-style: none;
-    //     }
-    //     z-index:9999999;
-    //     // overflow:hidden;
-    //     // overflow-y:scroll;
-    //     // max-height: 400px;
-    //     // MAX-WIDTH:100%;
-    //     height: auto;
-    //     max-height: 400px;
-    //     overflow-x: hidden!important;
-    //     overflow-y:scroll!important;
-    // }
 }
-
+#mobile_alpha_list {
+    .spinner {
+        font-size: 1rem;
+    }
+}
 #store_search:focus {
     background: rgba(0, 0, 0, 0.6);
 }
@@ -2094,14 +2078,14 @@ strong, .bold {
     right: 0;
     width: 80%;
     height: 30px;
-    background-image: url("//codecloud.cdn.speedyrails.net/sites/5af46c3b6e6f644d65050000/image/png/1517508256971/Rectangle 10.png");
+    background-image: url("//codecloud.cdn.speedyrails.net/sites/5af1ff176e6f645120180000/image/png/1517508256971/Rectangle 10.png");
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
 }
 
 .store_coming_soon.store_details {
-    background-image: url("//codecloud.cdn.speedyrails.net/sites/5af46c3b6e6f644d65050000/image/png/1517508256971/Rectangle 10.png");
+    background-image: url("//codecloud.cdn.speedyrails.net/sites/5af1ff176e6f645120180000/image/png/1517508256971/Rectangle 10.png");
     background-position: center right;
     height: 40px;
     top: 0;
@@ -2336,6 +2320,10 @@ strong, .bold {
         text-decoration:none;
     }
 }
+.event_name {
+    font-size: 1.5rem;
+}
+
 .event_dets_container{
     min-height: 220px;
     .event_name {
@@ -2388,6 +2376,8 @@ strong, .bold {
     position: relative;
     margin: 20px auto;
     padding-bottom: 4px;
+        font-size: 2.25rem;
+    line-height: 44px;
 }
 .promo_name:after {
     content: " ";
@@ -3018,7 +3008,6 @@ gallery:after{
     }
 }
 
-/******* Contact us page ********/
 #contact_us_container {
     background-color: #EDEDED;
     padding-bottom: 30px;
@@ -3034,13 +3023,8 @@ gallery:after{
         bottom: -10px;
         width: 100%;
     }
-    
-}
-.contact_content {
-    h4 { 
-        color : $accent;
-        // font-family: 'ProximaNova-Bold';
-        font-weight:600;
+    a{
+        color: $accent;
     }
 }
 @media (max-width: 1300px) {
