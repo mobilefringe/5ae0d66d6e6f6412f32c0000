@@ -1,7 +1,7 @@
 <template>
     <div>
         <a href="https://www.instagram.com/parklandmall" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i><p style="display:none">Instagram</p></a>
-        <a href="https://www.facebook.com/ParklandMall" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i><p style="display:none">Instagram</p></a>
+        <a href="https://www.facebook.com/ParklandMall" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i><p style="display:none">Facebook</p></a>
         <a href="https://www.twitter.com/parklandmallrd" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i><p style="display:none">Twitter</p></a>
     </div>
     
