@@ -33,7 +33,6 @@
 
 <script>
     define(["Vue", "vuex", 'vue!vue-slick', 'js-cookie', 'vue-lazy-load', 'vue!masonry_component'], function(Vue, Vuex, slick, Cookies, VueLazyload, VueMasonryComponent) {
-        Vue.use(VueMasonryPlugin.default);
         Vue.use(VueLazyload);
         return Vue.component("home-component", {
             template: template, // the variable template will be injected
