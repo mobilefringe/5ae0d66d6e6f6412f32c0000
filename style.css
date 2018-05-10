@@ -630,7 +630,7 @@ strong, .bold {
 
 /* DESKTOP NAV */
 .menu_bar {
-    height: 115px;
+    // height: 115px;
     background: #fff;
     z-index: 999;
     border-bottom: 1px solid #ccc;
