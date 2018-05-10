@@ -87,7 +87,7 @@
                 this.loadData().then(response => {
                     this.dataloaded = true;
                     
-                    var temp_repo = this.findRepoByName('Jobs Banner');
+                    var temp_repo = this.findRepoByName('Jobs and Leasing Banner');
                     if(temp_repo) {
                         this.promoBanner = temp_repo.images[0];
                     }
