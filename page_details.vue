@@ -75,9 +75,30 @@
                         }
                         this.currentPage = response[0].data;
                         var temp_repo = this.findRepoByName('Pages Banner');
+                        //Add custom banners for indivial pages 
+                        if( _.includes(id, 'gift-cards')) {
+                            temp_repo = this.findRepoByName('Giftcards Banner');
+                        }
+                        else if ( _.includes(id, 'services')) {
+                            temp_repo = this.findRepoByName('Services Banner');
+                        }
+                        else if( _.includes(id, 'accessibilty')) {
+                            temp_repo = this.findRepoByName('Accessibility Banner');
+                        }
+                        else if( _.includes(id, 'fashionicity')) {
+                            temp_repo = this.findRepoByName('FashioniCity Banner');
+                        }
+                        else if( _.includes(id, 'leasing')) {
+                            temp_repo = this.findRepoByName('Leasing Banner');
+                        }
+                        else {
+                            temp_repo = this.findRepoByName('Pages Banner');
+                        }
+                        
                         if(temp_repo) {
                             this.pageBanner = temp_repo.images[0];
                         }
+                        this.pageBanner = this.pageBanner;
                     });
                 }
             }
