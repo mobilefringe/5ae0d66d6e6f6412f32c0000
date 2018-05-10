@@ -89,7 +89,7 @@
                             temp_repo = this.findRepoByName('Healthy Strides Banner');
                         }
                         else if( _.includes(id, 'leasing')) {
-                            temp_repo = this.findRepoByName('Leasing Banner');
+                            temp_repo = this.findRepoByName('Jobs and Leasing Banner');
                         }
                         else {
                             temp_repo = this.findRepoByName('Pages Banner');
