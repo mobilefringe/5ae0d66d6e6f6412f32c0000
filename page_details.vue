@@ -86,7 +86,7 @@
                             temp_repo = this.findRepoByName('Kidz Club');
                         }
                         else if( _.includes(id, 'healthy-strides')) {
-                            temp_repo = this.findRepoByName('FashioniCity Banner');
+                            temp_repo = this.findRepoByName('Healthy Strides Banner');
                         }
                         else if( _.includes(id, 'leasing')) {
                             temp_repo = this.findRepoByName('Leasing Banner');
