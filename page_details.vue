@@ -82,7 +82,7 @@
                         else if ( _.includes(id, 'guest-services') || _.includes(id, 'awards') ) {
                             temp_repo = this.findRepoByName('Hours, Awards and Guest Services Banner');
                         }
-                        else if( _.includes(id, 'accessibilty')) {
+                        else if( _.includes(id, 'kidz-club')) {
                             temp_repo = this.findRepoByName('Accessibility Banner');
                         }
                         else if( _.includes(id, 'fashionicity')) {
