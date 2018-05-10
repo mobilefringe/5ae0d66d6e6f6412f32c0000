@@ -85,7 +85,7 @@
                         else if( _.includes(id, 'kidz-club')) {
                             temp_repo = this.findRepoByName('Kidz Club');
                         }
-                        else if( _.includes(id, 'fashionicity')) {
+                        else if( _.includes(id, 'healthy-strides')) {
                             temp_repo = this.findRepoByName('FashioniCity Banner');
                         }
                         else if( _.includes(id, 'leasing')) {
