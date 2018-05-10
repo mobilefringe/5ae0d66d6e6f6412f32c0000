@@ -3,7 +3,7 @@
         <div v-if="pageBanner" class="page_header" v-bind:style="{ backgroundImage: 'url(' + pageBanner.image_url + ')' }">
 			<!--http://via.placeholder.com/1920x300-->
 			<div class="site_container">
-				<div class="header_content">
+				<div class="header_content" v-if="id !== 'parklandmall-kidz-club'">
 					<h1 v-if="locale=='en-ca'">{{currentPage.title}}</h1>
 					<h1 v-else>{{currentPage.title_2}}</h1>
 				</div>
