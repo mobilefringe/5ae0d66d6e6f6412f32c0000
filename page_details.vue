@@ -88,7 +88,7 @@
                         else if( _.includes(id, 'healthy-strides')) {
                             temp_repo = this.findRepoByName('Healthy Strides Banner');
                             
-                            console.log("hello")
+                            console.log("hello", temp_repo)
                         }
                         else if( _.includes(id, 'leasing')) {
                             temp_repo = this.findRepoByName('Jobs and Leasing Banner');
