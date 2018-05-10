@@ -86,6 +86,7 @@
                             temp_repo = this.findRepoByName('Kidz Club');
                         }
                         else if( _.includes(id, 'healthy-strides')) {
+                            console.log("hello")
                             temp_repo = this.findRepoByName('Healthy Strides Banner');
                         }
                         else if( _.includes(id, 'leasing')) {
