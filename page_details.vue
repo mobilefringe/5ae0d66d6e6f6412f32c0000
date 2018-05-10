@@ -77,7 +77,7 @@
                         var temp_repo = null;
                         //Add custom banners for indivial pages 
                         if( _.includes(id, 'press-releases') ||  _.includes(id, 'history') ) {
-                            temp_repo = this.findRepoByName('Giftcards Banner');
+                            temp_repo = this.findRepoByName('Press Release and History Banner');
                         }
                         else if ( _.includes(id, 'services')) {
                             temp_repo = this.findRepoByName('Services Banner');
