@@ -75,12 +75,6 @@
 	</div>
 </template>
 <style>
-	#png_map{
-	    width:1310px;
-		height: 983px;
-		min-width:1310px;
-		min-height: 983px;
-	}
 	.mapplic-popup-link {
 	    display:none!important;
 	}
