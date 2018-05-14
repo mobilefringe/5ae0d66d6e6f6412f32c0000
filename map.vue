@@ -122,10 +122,15 @@
                 getPNGurl() {
                     return "https://www.mallmaverick.com" + this.property.map_url;
                 },
-                svgMapRef() {
-                    return _.filter(this.$children, function(o) {
-                        return (o.$el.className == "svg-map")
-                    })[0];
+                pngMapRef() {
+                    var reference = null; 
+                    if(this.windowWidth <= 768) {
+                        reference = this.$refs.pngmaprefmobile;
+                    }
+                    else {
+                        reference = this.$refs.pngmap_ref;
+                    }
+                    return reference;
                 },
                 getStoreById(){
                     
