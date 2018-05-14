@@ -360,7 +360,9 @@ strong, .bold {
     :-ms-input-placeholder { /* IE 10+ */
       color: #000;
     }
-
+    .selected-tag{
+        position:absolute;
+    }
     
 }
 .main_content_container {
