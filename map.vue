@@ -28,7 +28,8 @@
             </div>
             <div class="col-sm-8">
             <div class="padding_top_20 map light_border">
-				<png-map ref="pngmap_ref" :png-map-url="getPNGurl" :initial-position="'700 450'" @updateMap="updatePNGMap"></png-map>
+				<!--<png-map ref="pngmap_ref" :png-map-url="getPNGurl" :initial-position="'700 450'" @updateMap="updatePNGMap"></png-map>-->
+				<mapplic-png-map ref="pngmap_ref" :height="500" :minimap= "false" :deeplinking="false" :sidebar="false" :hovertip="true" :storelist="allStores" :floorlist="floorList" :bindLocationOpened="true" :svgWidth="property.map_image_width" :svgHeight="property.map_image_height" :showPin="true" v-if="!mobile_store"></mapplic-png-map>
 			</div>
             </div>
 		</div>
