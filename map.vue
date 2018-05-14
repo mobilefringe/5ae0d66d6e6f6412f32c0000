@@ -194,9 +194,16 @@
                     this.map = map;
                     // console.log("in updatepng")
                 },
-                addLandmark(store) {
-                    this.svgMapRef.addMarker(store);
-                },
+                dropPin(store) {
+                    // console.log("store.svgmap_region",store.svgmap_region);
+                    // this.$refs.mapplic_ref.showLocation(store.id);
+                     if(this.windowWidth <= 768 && this.selectedStore) {
+                        this.pngMapRef.showLocation(store.id);
+                    }
+                    else if(this.windowWidth > 768) {
+                        this.pngMapRef.showLocation(store.id);
+                    }
+                }
                 getWindowWidth(event) {
                     this.windowWidth = window.innerWidth;
                 },
