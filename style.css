@@ -2612,60 +2612,60 @@ iframe.station_41 {
     display: inline-block;
 }
 /* MAP */
-.map_directory {
-    padding: 30px 20px;
-    max-height: 700px;
-    background: #000;
-    color: #FFF;
-    margin-bottom: 70px;
-}
-.map_title {
-    // font-family: "LeagueGothic-Regular", sans-serif;
-}
-.directory_list {
-    max-height: 473px;
-    overflow-y: scroll;
-    .directory_store_name { 
-        margin: 15px 0;
-    }
-    li {
-        list-style:none;
-    }
-    .map_pin_a {
-        margin: 15px 0;
-        display: block;
-        font-size: 1.13rem;
-        line-height: 22px;
-        &:hover {
-            color: #fff;
-            font-family: "ProximaNova-Bold", sans-serif;    
-        }
-    }
-}
+// .map_directory {
+//     padding: 30px 20px;
+//     max-height: 700px;
+//     background: #000;
+//     color: #FFF;
+//     margin-bottom: 70px;
+// }
+// .map_title {
+//     // font-family: "LeagueGothic-Regular", sans-serif;
+// }
+// .directory_list {
+//     max-height: 473px;
+//     overflow-y: scroll;
+//     .directory_store_name { 
+//         margin: 15px 0;
+//     }
+//     li {
+//         list-style:none;
+//     }
+//     .map_pin_a {
+//         margin: 15px 0;
+//         display: block;
+//         font-size: 1.13rem;
+//         line-height: 22px;
+//         &:hover {
+//             color: #fff;
+//             font-family: "ProximaNova-Bold", sans-serif;    
+//         }
+//     }
+// }
 
-.map {
-    position: relative;
-    top: 0;
-    left: 0;
-    border-radius: 4px;
-}
-#map_reset {
-    padding: 4px 10px;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    z-index: 9;
-    border: none;
-    border-radius: 5px;
-    background-color: rgba(0, 0, 0,0.55);
-    // opacity: 0.55;
-    font-size: 1rem;
-    line-height: 20px;
-    color: #dbdbdb;
-    &:hover {
-        color: #FFF;
-    }
-}
+// .map {
+//     position: relative;
+//     top: 0;
+//     left: 0;
+//     border-radius: 4px;
+// }
+// #map_reset {
+//     padding: 4px 10px;
+//     position: absolute;
+//     top: 10px;
+//     left: 10px;
+//     z-index: 9;
+//     border: none;
+//     border-radius: 5px;
+//     background-color: rgba(0, 0, 0,0.55);
+//     // opacity: 0.55;
+//     font-size: 1rem;
+//     line-height: 20px;
+//     color: #dbdbdb;
+//     &:hover {
+//         color: #FFF;
+//     }
+// }
 #zoom_container .landmarks {
     position: absolute;
     z-index: 10;
