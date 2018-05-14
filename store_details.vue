@@ -112,15 +112,7 @@
                     }
                     this.pageBanner = this.pageBanner;
                 });
-                //  console.log("locale created", this.locale);
             },
-            // watch: {
-            //     currentStore: function() {
-            //         // this.currentStore.zoom = 10;
-                    
-            //     },
-            // },
-            
             computed: {
                 ...Vuex.mapGetters([
                     'property',
