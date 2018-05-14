@@ -61,7 +61,7 @@
 </template>
 
 <script>
-    define(["Vue", "vuex", "vue-select", "jquery", "smooth-zoom", "vue!png-map", "vue!search-component", "vue-lazy-load",  "vue!mapplic-png-map"], function(Vue, Vuex, VueSelect, $, smoothZoom, PNGMapComponent, SearchComponent,VueLazyload) {
+    define(["Vue", "vuex", "vue-select", "jquery", "smooth-zoom", "vue!png-map", "vue!search-component", "vue-lazy-load",  "vue!mapplic-png-map"], function(Vue, Vuex, VueSelect, $, smoothZoom, PNGMapComponent, SearchComponent, VueLazyload, MapplicComponent) {
         Vue.use(VueLazyload);
         return Vue.component("stores-component", {
             template: template, // the variable template will be injected
