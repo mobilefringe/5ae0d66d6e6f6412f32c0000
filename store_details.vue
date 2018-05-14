@@ -82,7 +82,7 @@
 	}
 </style>
 <script>
-    define(['Vue', 'vuex', 'moment', "jquery", "smooth-zoom", "vue!png-map", 'vue-lazy-load'], function(Vue, Vuex, moment, $, smoothZoom, PNGMapComponent, VueLazyload) {
+    define(['Vue', 'vuex', 'moment', 'vue-lazy-load'], function(Vue, Vuex, moment, $, smoothZoom, PNGMapComponent, VueLazyload) {
         Vue.use(VueLazyload);
         return Vue.component("store-details-component", {
             template: template, // the variable template will be injected,
