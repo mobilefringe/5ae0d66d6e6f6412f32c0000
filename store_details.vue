@@ -182,7 +182,7 @@
                 },
                 allStores() {
                     this.processedStores.map(function(store){
-                        store.zoom = 4;
+                        store.zoom = 1;
                     })
                     return this.processedStores;
                 },
