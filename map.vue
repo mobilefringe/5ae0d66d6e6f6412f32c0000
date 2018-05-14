@@ -43,7 +43,7 @@
 	}
 </style>
 <script>
-    define(["Vue", "vuex", "vue-select", "vue!search-component", "vue!mapplic-png-map"], function(Vue, Vuex, VueSelect, SearchComponent) {
+    define(["Vue", "vuex", "vue-select", "vue!search-component", "vue!mapplic-png-map"], function(Vue, Vuex, VueSelect, SearchComponent, MapplicComponent) {
         return Vue.component("stores-component", {
             template: template, // the variable template will be injected
             data: function() {
