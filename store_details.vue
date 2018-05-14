@@ -119,7 +119,7 @@
             },
             watch: {
                 currentStore: function() {
-                    this.currentStore.zoom = 3;
+                    this.currentStore.zoom = 4;
                     if ( _.includes(this.currentStore.store_front_url_abs, 'missing')) {
                         this.currentStore.store_front_url_abs = "//codecloud.cdn.speedyrails.net/sites/5af46c3b6e6f644d65050000/image/png/1518554684072/bonniedoonlogo.png";
                     }
