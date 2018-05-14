@@ -132,9 +132,6 @@
                     }
                     return reference;
                 },
-                getStoreById(){
-                    
-                },
                 filterStores() {
                     letter = this.selectedAlpha;
                     if (letter == "All") {
