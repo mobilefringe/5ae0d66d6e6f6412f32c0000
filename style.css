@@ -2622,26 +2622,26 @@ iframe.station_41 {
 .map_title {
     // font-family: "LeagueGothic-Regular", sans-serif;
 }
-// .directory_list {
-//     max-height: 473px;
-//     overflow-y: scroll;
-//     .directory_store_name { 
-//         margin: 15px 0;
-//     }
-//     li {
-//         list-style:none;
-//     }
-//     .map_pin_a {
-//         margin: 15px 0;
-//         display: block;
-//         font-size: 1.13rem;
-//         line-height: 22px;
-//         &:hover {
-//             color: #fff;
-//             font-family: "ProximaNova-Bold", sans-serif;    
-//         }
-//     }
-// }
+.directory_list {
+    max-height: 473px;
+    overflow-y: scroll;
+    .directory_store_name { 
+        margin: 15px 0;
+    }
+    li {
+        list-style:none;
+    }
+    .map_pin_a {
+        margin: 15px 0;
+        display: block;
+        font-size: 1.13rem;
+        line-height: 22px;
+        &:hover {
+            color: #fff;
+            font-family: "ProximaNova-Bold", sans-serif;    
+        }
+    }
+}
 
 // .map {
 //     position: relative;
