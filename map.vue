@@ -123,14 +123,7 @@
                     return "https://www.mallmaverick.com" + this.property.map_url;
                 },
                 pngMapRef() {
-                    var reference = null; 
-                    if(this.windowWidth <= 768) {
-                        reference = this.$refs.pngmaprefmobile;
-                    }
-                    else {
-                        reference = this.$refs.pngmap_ref;
-                    }
-                    return reference;
+                    return this.$refs.pngmap_ref;
                 },
                 filterStores() {
                     letter = this.selectedAlpha;
