@@ -171,7 +171,7 @@
                                 'length': 150
                             });
                             if (value.store != null && value.store != undefined && _.includes(value.store.image_url, 'missing')) {
-                                value.store.store_front_url_abs = vm.property.default_logo;
+                                value.store.store_front_url_abs = vm.property.default_logo_url;
                             }
                             else if (value.store == null || value.store == undefined) {
                                 value.store = {};
