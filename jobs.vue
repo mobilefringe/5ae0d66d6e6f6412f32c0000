@@ -29,7 +29,7 @@
 								<router-link :to="'/jobs/'+ promo.slug" class="event_learn_more pull-left">
 									{{$t("jobs_page.read_more")}} <i class="fa fa-angle-right" aria-hidden="true"></i>
 								</router-link>
-								<social-sharing :url="shareURL(promo.slug)" :title="promo.title" :description="promo.description" :quote="promo.description_short" twitter-user="BonnieDoonSC" :media="promo.image_url" inline-template >
+								<social-sharing :url="shareURL(promo.slug)" :title="promo.title" :description="promo.description" :quote="promo.description_short" twitter-user="parklandmallrd" :media="promo.image_url" inline-template >
 									<div class="blog-social-share pull_right">
 										<div class="social_share">
 											<network network="facebook">
