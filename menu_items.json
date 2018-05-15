@@ -45,7 +45,7 @@
     },
     {
         "name": "header.guest_services",
-        "href": "/pages/bonniedoon-services",
+        "href": "/pages/parklandmall-guest-services",
         "sub_menu": [{
                 "name": "header.guest_services ",
                 "href": "/pages/parklandmall-guest-services"
