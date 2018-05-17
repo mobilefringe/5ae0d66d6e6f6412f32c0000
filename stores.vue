@@ -153,6 +153,7 @@
                     if (category_id == "All" || category_id == null || category_id == undefined) {
                         category_id = "All";
                     } else {
+                        console.log(this.findCategoryByName(category_id));
                         category_id = this.findCategoryByName(category_id).id;
                     }
 
