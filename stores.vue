@@ -89,7 +89,7 @@
                     
                     console.log("category", this.category)
                     if(this.category == "eats"){
-                       this.selectedCat = "Food and Restaurants";
+                       this.selectedCat = "Food & Restaurants";
                        this.filterByCategory;
                     } else {
                         this.filteredStores = this.allStores;
