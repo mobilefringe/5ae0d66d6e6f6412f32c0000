@@ -87,10 +87,8 @@
                         this.storeBanner = temp_repo.images[0];
                     }
                     
-                    console.log("category", this.category)
                     if(this.category == "eats"){
                        this.selectedCat = "Food & Restaurants";
-                       console.log(this.selectedCat);
                        this.filterByCategory;
                     } else {
                         this.filteredStores = this.allStores;
