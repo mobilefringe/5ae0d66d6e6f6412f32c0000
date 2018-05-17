@@ -86,7 +86,6 @@
                     if(temp_repo) {
                         this.storeBanner = temp_repo.images[0];
                     }
-                    
                     if(this.category == "eats"){
                        this.selectedCat = "Food & Restaurants";
                        this.filterByCategory;
@@ -170,7 +169,6 @@
                     var el = document.getElementById("selectByCat");
                     if(el) {
                         el.classList.remove("open");
-                        console.log(el.classList);
                     }
                     
                 },
