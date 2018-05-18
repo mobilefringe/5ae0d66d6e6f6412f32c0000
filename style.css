@@ -2538,58 +2538,6 @@ strong, .bold {
     font-size: 0.94rem;
 }
 
-/* STATION 41 */
-.station_header {
-    margin: 0 auto;
-    margin-bottom: 100px;
-    padding-top: 256px;
-    height: 100vh;
-    background-image: url(//codecloud.cdn.speedyrails.net/sites/59282acb6e6f647d8d520100/image/png/1496078793000/shopping_banner.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #FFF;
-    text-align: center;
-    hr {
-        width: 190px;
-        border-top: 4.5px solid #fff;
-    }
-    h1 {
-        font-family: "LeagueGothic-Regular", sans-serif;
-        text-transform: uppercase;
-    }
-}
-.video_still {
-    margin-top: 100px;
-    margin-bottom: 85px;
-    width: 100%;
-    max-width: 100%;
-}
-iframe.station_41 {
-    width: 100%;
-    height: 555px;
-}
-.ekko-lightbox {
-    top: 30%;    
-}
-.leasing_title {
-    margin-bottom: 60px;
-    font-family: "LeagueGothic-Regular", sans-serif;
-    color: #000;
-}
-.leasing {
-    .flex-control-nav    {
-        display:none;
-    }
-    .flex-direction-nav{
-        display:block;
-    }
-}
-.leasing.flexslider {
-    width:900px;
-    margin: 0 auto;
-    padding-bottom:20px;
-}
 /* HOURS */
 .hours_day {
     display: inline-block;
