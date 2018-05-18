@@ -2641,6 +2641,9 @@ iframe.station_41 {
 .map_title {
     // font-family: "LeagueGothic-Regular", sans-serif;
 }
+.mapplic-popup-link {
+    background-color: $accent;
+}
 .directory_list {
     max-height: 473px;
     overflow-y: scroll;
