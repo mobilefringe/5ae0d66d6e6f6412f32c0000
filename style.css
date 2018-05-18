@@ -2558,7 +2558,12 @@ strong, .bold {
 .mapplic-popup-link {
     background-color: $accent;
 }
-
+.mapplic-zoom-buttons {
+    left: auto;
+    right: 0;
+    bottom: auto!important;
+    top: 0px;
+}
 .directory_list {
     max-height: 473px;
     overflow-y: scroll;
