@@ -75,7 +75,7 @@
 	</div>
 </template>
 <style>
-	.mapplic-popup-link, .mapplic-tooltip-close {
+	#store_dets_container .mapplic-popup-link, .mapplic-tooltip-close {
 	    display:none!important;
 	}
 	.mapplic-tooltip-content {
