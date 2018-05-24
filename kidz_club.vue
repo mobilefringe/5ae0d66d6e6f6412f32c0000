@@ -197,7 +197,7 @@
                             });
                             if(mm_success) {
                                 console.log("posting to cm")
-                                var  isSuccess  = this.campaignMonitorCall($('#kids_pine_club'), '92D4C54F0FEC16E5ADC2B1904DE9ED1A986580DC6A3319628442A577C97C4456693086D5C481B009E96C7FD4BC0DC2C652A2FE59DB69EFC4F97AF377DCF262CF');
+                                var  isSuccess  = this.campaignMonitorCall($('#kids_club'), '92D4C54F0FEC16E5ADC2B1904DE9ED1A986580DC6A3319628442A577C97C4456693086D5C481B009E96C7FD4BC0DC2C652A2FE59DB69EFC4F97AF377DCF262CF');
                                 console.log("posted to cm", isSuccess)
                                 // if(isSuccess) {
                                 //     this.formSuccess = true;
