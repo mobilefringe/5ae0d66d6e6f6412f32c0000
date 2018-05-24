@@ -132,7 +132,7 @@
             },
             created() {
                 this.loadData().then(response => {
-                    this.currentContest = this.findContestBySlug('pinecentre-kids-pine-club--2');
+                    this.currentContest = this.findContestBySlug('parklandmall-kids-club');
                     var temp_repo = this.findRepoByName('Kids Club Banner');
                     if(temp_repo) {
                         this.pageBanner = temp_repo.images[0];
