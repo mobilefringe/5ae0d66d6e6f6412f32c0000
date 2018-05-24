@@ -79,7 +79,7 @@
 						    <div class="col-xs-12">
 						        <label class="checkbox">
                                     <input name="agree_terms" required type="checkbox" >
-                                    I have read and understand Parkland Mall's <router-link to="">terms and conditions.</router-link>
+                                    I have read and understand Parkland Mall's <router-link to="/pages/parklandmall-terms-and-conditions-parkland-mall-kidz-club">terms and conditions.</router-link>
                                 </label>
 						    </div>
 							<div class="col-xs-12" style="margin-top: 20px;">
