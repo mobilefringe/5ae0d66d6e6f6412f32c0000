@@ -168,7 +168,7 @@
                             json_data.child_last_name = this.form_data.child_last_name;
                             json_data.child_birthday = this.form_data.birthday;
                             json_data.child_gender = this.form_data.gender;
-                            json_data.email = this.form_data.email;
+                            json_data.parent_email = this.form_data.email;
                             json_data.phone = this.form_data.phone;
                             json_data.address = this.form_data.mailing_address;
                             json_data.city = this.form_data.city;
