@@ -169,7 +169,7 @@
                             json_data.child_gender = this.form_data.gender;
                             json_data.email = this.form_data.email;
                             json_data.phone = this.form_data.phone;
-                            json_data.mailing_address = this.form_data.mailing_address;
+                            json_data.address = this.form_data.mailing_address;
                             json_data.city = this.form_data.city;
                             json_data.postal_code = this.form_data.postal_code;
                             var vm = this;
