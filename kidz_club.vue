@@ -76,6 +76,13 @@
                                 </label>
                                 <label class=""> <a href="https://www.morguard.com/privacy/"> Read our Privacy Policy here</a></label> 
 						    </div>
+						    <div class="col-xs-12">
+						        <label class="checkbox">
+                                    <input name="agree_terms" required type="checkbox" >
+                                    I have read and understand Parkland Mall's terms and conditions.
+                                </label>
+                                <label class=""> <a href="https://www.morguard.com/privacy/"> Read our Privacy Policy here</a></label> 
+						    </div>
 							<div class="col-xs-12" style="margin-top: 20px;">
 								<button class="contest_btn" type="submit" :disabled="formSuccess">Submit</button>
 							</div>
