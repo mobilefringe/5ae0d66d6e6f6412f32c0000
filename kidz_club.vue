@@ -56,7 +56,7 @@
 							<div class="col-sm-6 col-xs-12 " :class="{'has-error': errors.has('mailing_address')}"  style="padding-top: 20px;">
 								<label class="label" for="mailing_address">Address <span class="req_star"> *</span></label>
 								<input v-model="form_data.mailing_address" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="cm-f-fjutkl" type="text" placeholder="Mailing Address" data-vv-delay="500" data-vv-as="mailing address">
-								<span v-show="errors.has('mailing_address')" class="form-control-feedback">{{ errors.first('mailing_address') }}</span>
+								<span v-show="errors.has('cm-f-fjutkl')" class="form-control-feedback">{{ errors.first('cm-f-fjutkl') }}</span>
 							</div>
 							<div class="col-sm-6 col-xs-12"  :class="{'has-error': errors.has('city')}" style="padding-top: 20px;">
 								<label class="label" for="city"> City <span class="req_star"> *</span></label>
