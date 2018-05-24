@@ -175,7 +175,7 @@
                             json_data.postal_code = this.form_data.postal_code;
                             var contest_entry = {};
                             contest_entry.json = json_data;
-                            host_name = vm.property.mm_host.replace("http:", "");
+                            host_name = this.property.mm_host.replace("http:", "");
                             var url = host_name + "/contests/" + vm.currentContest.slug + "/json_entry";//"/create_js_entry";
                             $.ajax({
                                 url: url,
