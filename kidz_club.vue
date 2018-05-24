@@ -32,7 +32,7 @@
                 			<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('birthday')}"   style="padding-top: 20px;">
                 				<label class="label" for="birthday">Birthday <span class="req_star"> *</span></label>
                 				<input v-model="form_data.birthday" class="form-control" v-validate="'required|date_format:MM/DD/YYYY'" :class="{'input': true}" name="cm-f-fjutut" type="text" placeholder="mm/dd/yyyy" data-vv-delay="500" data-vv-as="birthday" id="birthday">
-                				<span v-show="errors.has('cm-f-fjutut')" class="form-control-feedback">{{ errors.first('birthday') }}</span>
+                				<span v-show="errors.has('cm-f-fjutut')" class="form-control-feedback">{{ errors.first('cm-f-fjutut') }}</span>
                 			</div>
                 			<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('gender')}"  style="padding-top: 20px;">
                 				<label class="label" for="gender">Gender <span class="req_star"> *</span></label>
@@ -51,7 +51,7 @@
 							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('phone')}" >
 								<label class="label" for="phone">Phone Number <span class="req_star"> *</span></label>
 								<input v-model="form_data.phone" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="cm-f-fjuthu" type="text" placeholder="Phone number" data-vv-delay="500" data-vv-as="phone">
-								<span v-show="errors.has('phone')" class="form-control-feedback">{{ errors.first('phone') }}</span>
+								<span v-show="errors.has('cm-f-fjuthu')" class="form-control-feedback">{{ errors.first('cm-f-fjuthu') }}</span>
 							</div>
 							<div class="col-sm-6 col-xs-12 " :class="{'has-error': errors.has('mailing_address')}"  style="padding-top: 20px;">
 								<label class="label" for="mailing_address">Address <span class="req_star"> *</span></label>
