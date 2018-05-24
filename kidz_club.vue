@@ -242,17 +242,6 @@
                         this.noMoreChildren = true;
                     }
                 },
-                updateChild (data) {
-                    if(data.id_num == 1) {
-                        this.form_data.child_1 = data;
-                    }
-                    else if(data.id_num == 2) {
-                        this.form_data.child_2 = data;
-                    } 
-                    else {
-                        this.form_data.child_3 = data;
-                    }
-                },
                 campaignMonitorCall(form, form_data_id) {
                     // Get e-mail value.
                     var vm = this;
