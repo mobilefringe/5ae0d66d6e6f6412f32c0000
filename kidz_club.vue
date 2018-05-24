@@ -46,7 +46,7 @@
 							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('email')}">
 								<label class="label" for="email">Parent's Email <span class="req_star"> *</span></label>
 								<input v-model="form_data.email" v-validate="'required|email'" class="form-control js-cm-email-input" :class="{'input': true}" name="cm-vgldd-vgldd" type="email" placeholder="Email" data-vv-delay="500" data-vv-as="email" id="email">
-								<span v-show="errors.has('email')" class="form-control-feedback">{{ errors.first('cm-vgldd-vgldd') }}</span>
+								<span v-show="errors.has('cm-vgldd-vgldd')" class="form-control-feedback">{{ errors.first('cm-vgldd-vgldd') }}</span>
 							</div>
 							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('phone')}" >
 								<label class="label" for="phone">Phone Number <span class="req_star"> *</span></label>
