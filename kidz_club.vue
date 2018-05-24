@@ -164,7 +164,6 @@
                         if(errors && errors.items.length == 0){
                             //format contests data for MM
                             var json_data = {};
-                            json_data.guardian_name = this.form_data.parent_first_name + " " + this.form_data.parent_first_name;
                             json_data.email = this.form_data.email;
                             json_data.phone = this.form_data.phone;
                             json_data.mailing_address = this.form_data.mailing_address;
