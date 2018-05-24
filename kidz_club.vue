@@ -164,6 +164,9 @@
                         if(errors && errors.items.length == 0){
                             //format contests data for MM
                             var json_data = {};
+                            json_data.child_name = vm.form_data["child_"+(key+1)].child_first_name + " "  +  vm.form_data["child_"+(key+1)].child_last_name;
+                                json_data.child_birthday = vm.form_data["child_"+(key+1)].birthday;
+                                json_data.child_gender = vm.form_data["child_"+(key+1)].gender;
                             json_data.email = this.form_data.email;
                             json_data.phone = this.form_data.phone;
                             json_data.mailing_address = this.form_data.mailing_address;
@@ -171,9 +174,7 @@
                             json_data.postal_code = this.form_data.postal_code;
                             var vm = this;
                             _.times(this.numberOfChildren, function(key) {
-                                json_data.child_name = vm.form_data["child_"+(key+1)].child_first_name + " "  +  vm.form_data["child_"+(key+1)].child_last_name;
-                                json_data.child_birthday = vm.form_data["child_"+(key+1)].birthday;
-                                json_data.child_gender = vm.form_data["child_"+(key+1)].gender;
+                                
                                 
                                 var contest_entry = {};
                                 contest_entry.json = json_data;
