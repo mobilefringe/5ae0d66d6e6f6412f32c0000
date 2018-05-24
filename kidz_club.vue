@@ -71,7 +71,7 @@
 						<div class="form-group account-btn text-left m-t-10 agreement">
 						    <div class="col-xs-12">
 						        <label class="checkbox">
-                                    <input name="agree_terms" required type="checkbox" >
+                                    <input name="agree_to_receive" required type="checkbox" >
                                      Yes, I would like to receive Kidz Club newsletters on behalf of my child.
                                 </label>
                                 <label class=""> <a href="https://www.morguard.com/privacy/"> Read our Privacy Policy here</a></label> 
