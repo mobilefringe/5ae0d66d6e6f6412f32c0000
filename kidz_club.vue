@@ -173,29 +173,24 @@
                             json_data.address = this.form_data.mailing_address;
                             json_data.city = this.form_data.city;
                             json_data.postal_code = this.form_data.postal_code;
-                            var vm = this;
-                            _.times(this.numberOfChildren, function(key) {
-                                
-                                
-                                var contest_entry = {};
-                                contest_entry.json = json_data;
-                                host_name = vm.property.mm_host.replace("http:", "");
-                                var url = host_name + "/contests/" + vm.currentContest.slug + "/json_entry";//"/create_js_entry";
-                                $.ajax({
-                                    url: url,
-                                    type: "POST",
-                                    data: contest_entry,
-                                    async: false,
-                                    success: function(data) {
-                                        // vm.formSuccess = true;
-                                       mm_success = true;
-                                       console.log("mm post successful");
-                                    },
-                                    error: function(data){
-                                        console.log("error data:" , data);
-                                        mm_success = false;
-                                    }
-                                });
+                            var contest_entry = {};
+                            contest_entry.json = json_data;
+                            host_name = vm.property.mm_host.replace("http:", "");
+                            var url = host_name + "/contests/" + vm.currentContest.slug + "/json_entry";//"/create_js_entry";
+                            $.ajax({
+                                url: url,
+                                type: "POST",
+                                data: contest_entry,
+                                async: false,
+                                success: function(data) {
+                                    // vm.formSuccess = true;
+                                   mm_success = true;
+                                   console.log("mm post successful");
+                                },
+                                error: function(data){
+                                    console.log("error data:" , data);
+                                    mm_success = false;
+                                }
                             });
                             if(mm_success) {
                                 console.log("posting to cm")
