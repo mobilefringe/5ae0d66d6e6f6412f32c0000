@@ -16,7 +16,7 @@
             </div> 
             <div class="row"> 
                 <div class="col-sm-12 contest_contents">
-                    <form class="form-horizontal padding_top_20 js-cm-form" action="form-submit" v-on:submit.prevent="validateBeforeSubmit" id="kids_pine_club">
+                    <form class="form-horizontal padding_top_20 js-cm-form" action="form-submit" v-on:submit.prevent="validateBeforeSubmit" id="kids_club">
 						<div class="form-group " id="child_container">
 						    <div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('child_first_name')}">
                 				<label class="label" for="child_first_name">Child's First Name <span class="req_star"> *</span></label>
