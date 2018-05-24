@@ -144,7 +144,7 @@
             watch: {
                 form_data () {
                     if(this.form_data.gender !== null && this.form_data.gender !== undefined && this.form_data.gender.length > 0){
-                        this.genderError = true;
+                        this.genderError = false;
                     }
                 }
             },
