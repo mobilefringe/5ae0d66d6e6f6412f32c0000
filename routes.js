@@ -81,7 +81,7 @@ define([], function() {
         },
         {
             path: '/hours',
-            component: view('hours'),
+            component: view('default'),
             children: [{
                 path: '',
                 component: view('hours'),
@@ -158,13 +158,13 @@ define([], function() {
             }]
         },
         {
-            path: '/thank_you',
+            path: '/kids_club',
             component: view('default'),
             redirect: '/404',
             children: [{
                 path: '',
-                component: view('thank_you'),
-                name: 'thankYou'
+                component: view('kids_club'),
+                name: 'kidsClub'
             }]
         },
         {
