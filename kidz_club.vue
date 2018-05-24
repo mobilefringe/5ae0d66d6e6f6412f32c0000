@@ -18,27 +18,27 @@
                 <div class="col-sm-12 contest_contents">
                     <form class="form-horizontal padding_top_20 js-cm-form" action="form-submit" v-on:submit.prevent="validateBeforeSubmit" id="kids_pine_club">
 						<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('child_first_name')}">
-				<label class="label" :for="'child_first_name' + id_num">Child's First Name <span class="req_star"> *</span></label>
-				<input v-model="child_form_data.child_first_name" v-validate="'required:true'" class="form-control" :class="{'input': true}" :name="'child_first_name' + id_num" type="text" placeholder="First Name" data-vv-delay="500" data-vv-as="child's first name" :id="'child_first_name' + id_num">
-				<span v-show="errors.has('child_first_name')" class="form-control-feedback">{{ errors.first('child_first_name') }}</span>
-			</div>
-			<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('child_last_name')}">
-				<label class="label" :for="'child_last_name'+ id_num">Child's Last Name <span class="req_star"> *</span></label>
-				<input v-model="child_form_data.child_last_name" v-validate="'required:true'" class="form-control" :class="{'input': true}" :name="'child_last_name'+ id_num" type="text" placeholder="Last Name" data-vv-delay="500" data-vv-as="child's last name" :id="'child_last_name'+ id_num">
-				<span v-show="errors.has('child_last_name')" class="form-control-feedback">{{ errors.first('child_last_name') }}</span>
-			</div>
-			<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('birthday')}"   style="padding-top: 20px;">
-				<label class="label" :for="'birthday'+ id_num">Birthday <span class="req_star"> *</span></label>
-				<input v-model="child_form_data.birthday" class="form-control" v-validate="'required|date_format:MM/DD/YYYY'" :class="{'input': true}" :name="'birthday'+ id_num" type="text" placeholder="mm/dd/yyyy" data-vv-delay="500" data-vv-as="birthday" :id="'birthday'+ id_num">
-				<span v-show="errors.has('birthday')" class="form-control-feedback">{{ errors.first('birthday') }}</span>
-			</div>
-			<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('gender')}"  style="padding-top: 20px;">
-				<label class="label" :for="'gender_'+randKey">Gender <span class="req_star"> *</span></label>
-				<input style="display:none;" :id="'gender_'+randKey">
-				<radio :name="'gender_'+randKey" value="male" v-model="child_form_data.gender" :key="randKey">Male</radio>
-                <radio :name="'gender_'+ (randKey+1)" value="female" v-model="child_form_data.gender" :key="randKey+1">Female</radio>
-                <span v-if="genderError" class="form-control-feedback">Please choosed a gender</span>
-			</div>
+            				<label class="label" :for="'child_first_name' + id_num">Child's First Name <span class="req_star"> *</span></label>
+            				<input v-model="child_form_data.child_first_name" v-validate="'required:true'" class="form-control" :class="{'input': true}" :name="'child_first_name' + id_num" type="text" placeholder="First Name" data-vv-delay="500" data-vv-as="child's first name" :id="'child_first_name' + id_num">
+            				<span v-show="errors.has('child_first_name')" class="form-control-feedback">{{ errors.first('child_first_name') }}</span>
+            			</div>
+            			<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('child_last_name')}">
+            				<label class="label" :for="'child_last_name'+ id_num">Child's Last Name <span class="req_star"> *</span></label>
+            				<input v-model="child_form_data.child_last_name" v-validate="'required:true'" class="form-control" :class="{'input': true}" :name="'child_last_name'+ id_num" type="text" placeholder="Last Name" data-vv-delay="500" data-vv-as="child's last name" :id="'child_last_name'+ id_num">
+            				<span v-show="errors.has('child_last_name')" class="form-control-feedback">{{ errors.first('child_last_name') }}</span>
+            			</div>
+            			<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('birthday')}"   style="padding-top: 20px;">
+            				<label class="label" :for="'birthday'+ id_num">Birthday <span class="req_star"> *</span></label>
+            				<input v-model="child_form_data.birthday" class="form-control" v-validate="'required|date_format:MM/DD/YYYY'" :class="{'input': true}" :name="'birthday'+ id_num" type="text" placeholder="mm/dd/yyyy" data-vv-delay="500" data-vv-as="birthday" :id="'birthday'+ id_num">
+            				<span v-show="errors.has('birthday')" class="form-control-feedback">{{ errors.first('birthday') }}</span>
+            			</div>
+            			<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('gender')}"  style="padding-top: 20px;">
+            				<label class="label" :for="'gender_'+randKey">Gender <span class="req_star"> *</span></label>
+            				<input style="display:none;" :id="'gender_'+randKey">
+            				<radio :name="'gender_'+randKey" value="male" v-model="child_form_data.gender" :key="randKey">Male</radio>
+                            <radio :name="'gender_'+ (randKey+1)" value="female" v-model="child_form_data.gender" :key="randKey+1">Female</radio>
+                            <span v-if="genderError" class="form-control-feedback">Please choosed a gender</span>
+            			</div>
 						<a @click="incrementChildren()" v-show="!noMoreChildren" style="margin: 10px auto 30px;display: inline-block;"> <i class="fa fa-plus"></i>Add Another Child</a>
 						<div class="form-group ">
 							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('first_name')}">
