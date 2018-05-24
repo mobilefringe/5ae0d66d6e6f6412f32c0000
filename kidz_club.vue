@@ -133,7 +133,7 @@
             created() {
                 this.loadData().then(response => {
                     this.currentContest = this.findContestBySlug('parklandmall-kids-club');
-                    var temp_repo = this.findRepoByName('Kids Club Banner');
+                    var temp_repo = this.findRepoByName('Kidz Club');
                     if(temp_repo) {
                         this.pageBanner = temp_repo.images[0];
                     }
