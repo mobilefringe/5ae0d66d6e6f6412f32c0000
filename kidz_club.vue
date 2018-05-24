@@ -141,6 +141,9 @@
                 this.correctValNum = Utility.rannumber();
                 
             },
+            watch: {
+                
+            },
             computed: {
                 ...Vuex.mapGetters([
                     'property',
