@@ -142,7 +142,9 @@
                 
             },
             watch: {
-                
+                form_data () {
+                    
+                }
             },
             computed: {
                 ...Vuex.mapGetters([
