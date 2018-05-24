@@ -148,16 +148,6 @@ define([], function() {
             }]
         },
         {
-            path: '/photos',
-            component: view('default'),
-            redirect: '/404',
-            children: [{
-                path: '',
-                component: view('photos'),
-                name: 'photos'
-            }]
-        },
-        {
             path: '/kids_club',
             component: view('default'),
             redirect: '/404',
