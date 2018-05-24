@@ -97,7 +97,6 @@
 
 <script>
     define(["Vue", "vuex", "axios", "moment", "moment-timezone", "vue-moment", "vue-meta", 'vee-validate', 'utility', 'vue-checkbox-radio', 'vue!multi_children_component.vue'], function(Vue, Vuex,axios, moment, tz, VueMoment, Meta, VeeValidate, Utility, CheckboxRadio, MultiChildrenComponent) {
-        Vue.use(Meta);
         Vue.use(VeeValidate);
         Vue.use(CheckboxRadio.default);
         return Vue.component("kids-club-component", {
