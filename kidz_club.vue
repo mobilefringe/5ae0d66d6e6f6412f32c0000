@@ -123,11 +123,7 @@
                     validNumError: false,
                     currentContest: null,
                     pageBanner: null,
-                    genderError : false,
-                    numberOfChildren: 1,
-                    showChild2 : false,
-                    showChild3 : false,
-                    noMoreChildren : false
+                    genderError : false
                 }
             },
             created() {
