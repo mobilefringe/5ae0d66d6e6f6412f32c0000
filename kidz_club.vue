@@ -176,7 +176,7 @@
                             var contest_entry = {};
                             contest_entry.json = json_data;
                             host_name = this.property.mm_host.replace("http:", "");
-                            var url = host_name + "/contests/" + vm.currentContest.slug + "/json_entry";//"/create_js_entry";
+                            var url = host_name + "/contests/" + this.currentContest.slug + "/json_entry";//"/create_js_entry";
                             $.ajax({
                                 url: url,
                                 type: "POST",
