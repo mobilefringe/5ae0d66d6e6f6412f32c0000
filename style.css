@@ -2431,6 +2431,7 @@ strong, .bold {
 .store_dets_title {
     color: $accent;
     letter-spacing: 1.2px;
+    margin: 10pc auto;
 }
 .store_dets_btn {
     background: $accent;
