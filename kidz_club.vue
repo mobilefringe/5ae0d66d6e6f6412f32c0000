@@ -123,7 +123,8 @@
                     validNumError: false,
                     currentContest: null,
                     pageBanner: null,
-                    genderError : false
+                    genderError : false,
+                    currentPage: null
                 }
             },
             created() {
