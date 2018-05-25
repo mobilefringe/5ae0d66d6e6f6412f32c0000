@@ -11,7 +11,7 @@
         <div class="site_container">
             <div class="row text-left">
                 <div class="col-sm-12">
-                    <div v-if="currentContest" v-html="currentContest.rich_description"></div>
+                    <div v-if="currentContest" v-html="currentPage.rich_description"></div>
                 </div>
             </div> 
             <div class="row"> 
