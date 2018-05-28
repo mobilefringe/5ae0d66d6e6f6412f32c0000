@@ -3333,8 +3333,8 @@ strong, .bold {
         // }
     }
     .form-group .checkbox {
-    margin-left: 20px;
-}
+        margin-left: 20px;
+    }
 }
 
 /* Medium devices (mobile, 425px and down) */
