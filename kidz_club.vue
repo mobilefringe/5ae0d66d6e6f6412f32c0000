@@ -198,7 +198,21 @@
                                 }
                             });
                             if(mm_success) {
-                                
+                                $.ajax({
+                                url: url,
+                                type: "POST",
+                                data: contest_entry,
+                                async: false,
+                                success: function(data) {
+                                    // vm.formSuccess = true;
+                                   mm_success = true;
+                                   console.log("mm post successful");
+                                },
+                                error: function(data){
+                                    console.log("error data:" , data);
+                                    mm_success = false;
+                                }
+                            });
                                 // https://parklandmall.us9.list-manage.com/subscribe/post?u=8efac4fed5f3b8120c4c4565a&amp;id=78ae0c8a53
                                 // this.campaignMonitorCall($('#kids_club'), '92D4C54F0FEC16E5ADC2B1904DE9ED1A986580DC6A3319628442A577C97C4456693086D5C481B009E96C7FD4BC0DC2C652A2FE59DB69EFC4F97AF377DCF262CF');
                             }
