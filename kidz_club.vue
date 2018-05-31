@@ -199,7 +199,7 @@
                             });
                             if(mm_success) {
                                 $.ajax({
-                                url: url,
+                                url: 'url'https://parklandmall.us9.list-manage.com/subscribe/post?u=8efac4fed5f3b8120c4c4565a&amp;id=78ae0c8a53,
                                 type: "POST",
                                 data: contest_entry,
                                 async: false,
