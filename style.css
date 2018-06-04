@@ -67,6 +67,7 @@ img[lazy=loading] {
 }
 .insta-feed-image[lazy=loading], .home-banner[lazy=loading], .page_header[lazy=loading] {
     margin: 0 auto;
+    margin-bottom: 40px;
     background-color: #e8e8e8;
     border: 1px solid #CBCDCE;
     position: relative;
