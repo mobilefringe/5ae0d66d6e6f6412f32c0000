@@ -2688,6 +2688,7 @@ strong, .bold {
         color: #000;
         padding: 0;
         word-break: break-word;
+        white-space: normal;
     }
     .form-group .form-control-feedback{
         font-size: 0.75rem;
