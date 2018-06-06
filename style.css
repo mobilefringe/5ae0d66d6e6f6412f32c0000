@@ -3360,6 +3360,19 @@ strong, .bold {
     .form-group .checkbox {
         margin-left: 20px;
     }
+    .page_header {
+        margin-bottom: 30px;
+        padding-top: 0;
+        // height: 300px;
+        height: 150px;
+        .header_content {
+            height: 150px;
+            line-height: 150px;
+        }
+        h1 {
+            font-size: 2.5rem;
+        }
+    }
 }
 
 /* Medium devices (mobile, 425px and down) */
