@@ -256,7 +256,7 @@ strong, .bold {
 .site_container {
     margin: 0 auto;
     max-width: 1170px;
-        word-break: break-word;
+    word-break: break-word;
 }
 .yield {
     // margin-top: 75px;
@@ -2687,6 +2687,7 @@ strong, .bold {
     .label{
         color: #000;
         padding: 0;
+        word-break: break-word;
     }
     .form-group .form-control-feedback{
         font-size: 0.75rem;
