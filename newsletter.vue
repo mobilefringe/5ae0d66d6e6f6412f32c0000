@@ -10,7 +10,7 @@
         <div class="site_container">
             <div class="row"> 
                 <div class="col-md-12 contact_contents">
-                    <form  class="form-horizontal js-cm-form" action="https://mobilefringe.createsend.com/t/d/s/fiilhi/"  method="post">
+                    <form  class="form-horizontal js-cm-form" action="https://mobilefringe.createsend.com/t/d/s/vltqi/" method="post">
                     <!--id="subForm" action="form-submit" v-on:submit.prevent="validateBeforeSubmit"-->
                         <div class="form-group ">
                             <div class="col-sm-6 col-xs-12" >
