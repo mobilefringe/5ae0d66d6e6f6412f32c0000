@@ -9,7 +9,7 @@
 		</div>  
 		<!-- for some reason if you do not put an outer container div this component template will not render -->
 		<div class="site_container">
-			<div class="row text-left" style="height: 300px; margin:30px auto;">
+			<div class="row text-left" style="margin:30px auto;">
 			    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2440.613977882536!2d-113.81218554887757!3d52.28670976114537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537455b49f248801%3A0xe01229fcdbb6c8f4!2sParkland+Mall!5e0!3m2!1sen!2sca!4v1548868823076" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
 			</div>
 		</div>
