@@ -87,6 +87,11 @@
 		</div>
 	</div>
 </template>
+<style>
+    p.card-text {
+        display: block;
+    }
+</style>
 <script>
     define(["Vue", "vuex", 'vue!social_links.vue', "bootstrap-vue", 'json!menu_items.json'], function (Vue, Vuex, SocialLinks, BootstrapVue, MenuItems) {
         // Vue.use(BootstrapVue);
