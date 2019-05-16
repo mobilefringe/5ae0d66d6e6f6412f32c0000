@@ -28,7 +28,7 @@
                             <div class="col-xs-12">
     					        <label class="checkbox">
                                     <input name="agree_newsletter" required  type="checkbox">
-                                        {{$t("newsletter_page.agree")}} . 
+                                        {{$t("newsletter_page.agree")}}. 
                                 </label>
     					    </div>
     					</div>
