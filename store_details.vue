@@ -115,7 +115,10 @@
                     var temp_repo = this.findRepoByName('Stores Banner');
                     if(temp_repo) {
                         this.pageBanner = temp_repo.images[0];
+                    } else {
+                        this.storeBanner = { "image_url": "" }
                     }
+                    
                     this.pageBanner = this.pageBanner;
                 });
             },
