@@ -116,7 +116,7 @@
                     if(temp_repo) {
                         this.pageBanner = temp_repo.images[0];
                     } else {
-                        this.storeBanner = { "image_url": "" }
+                        this.pageBanner = { "image_url": "" }
                     }
                     
                     this.pageBanner = this.pageBanner;
