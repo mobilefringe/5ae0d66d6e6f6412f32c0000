@@ -87,6 +87,7 @@
                     } else {
                         this.storeBanner = { "image_url": "" }
                     }
+                    
                     if(this.category == "eats"){
                        this.selectedCat = "Food & Restaurants";
                        this.filterByCategory;
