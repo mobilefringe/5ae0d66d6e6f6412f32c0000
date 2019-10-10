@@ -85,7 +85,7 @@
                     if (temp_repo && temp_repo.images) {
                         this.storeBanner = temp_repo.images[0];
                     } else {
-                        this.storeBanner = "";
+                        this.storeBanner = { "image_url": "" }
                     }
                     if(this.category == "eats"){
                        this.selectedCat = "Food & Restaurants";
