@@ -1,7 +1,6 @@
 <template>
 	<div v-if="dataloaded">
 		<div class="page_header" v-if="storeBanner" v-lazy:background-image="storeBanner.image_url">
-			<!--http://via.placeholder.com/1920x300-->
 			<div class="site_container">
 				<div class="header_content">
 					<h1>{{$t("stores_page.shopping")}}</h1>
@@ -83,8 +82,10 @@
                     this.filteredStores = this.allStores;
                     
                     var temp_repo = this.findRepoByName('Stores Banner');
-                    if(temp_repo) {
+                    if (temp_repo) {
                         this.storeBanner = temp_repo.images[0];
+                    } else {
+                        this.storeBanner = "";
                     }
                     if(this.category == "eats"){
                        this.selectedCat = "Food & Restaurants";
