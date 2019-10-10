@@ -113,7 +113,7 @@
                     this.dataLoaded = true;
                     this.updateCurrentStore(this.id);
                     var temp_repo = this.findRepoByName('Stores Banner');
-                    if(temp_repo) {
+                    if (temp_repo && temp_repo.images) {
                         this.pageBanner = temp_repo.images[0];
                     } else {
                         this.pageBanner = { "image_url": "" }
