@@ -38,7 +38,6 @@
 					<h2 class="promo_name" style="margin: 20px auto 0px;"  v-if="locale=='en-ca'">{{currentPromo.name}}</h2>
 					<h2 class="promo_name" style="margin: 20px auto 0px;"  v-else>{{currentPromo.name_2}}</h2>
 					<div class="row">
-						<p class="promo_div_date pull-left">{{currentPromo.start_date | moment("MMM D", timezone)}} - {{currentPromo.end_date | moment("MMM D", timezone)}}</p>
 						<p class="promo_div_date pull-left" v-if="isMultiDay(currentPromo)">{{ currentPromo.start_date | moment("MMMM D", timezone)}} - {{ currentPromo.end_date | moment("MMMM D", timezone)}}</p>
                         <p class="promo_div_date pull-left" v-else>{{ currentPromo.start_date | moment("MMMM D", timezone)}}</p>
                         
