@@ -20,7 +20,9 @@
 							<h2 class="event_name caps" v-if="locale=='en-ca'">{{promo.name}}</h2>
 							<h2 class="event_name caps" v-else>{{promo.name_2}}</h2>
 							<div class="event_thick_line"></div>
-							<p class="event_dates">{{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}</p>
+							<!--<p class="event_dates">{{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}</p>-->
+							<p v-if="promo.start_date == promo.end_date" class="event_dates">{{promo.start_date | moment("MMM D", timezone)}}</p>
+							<p v-else class="event_dates">{{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}</p>
 							<p class="event_desc" v-if="locale=='en-ca'">{{promo.description_short}}</p>
 							<p class="event_desc" v-else>{{promo.description_short_2}}</p>
 						
