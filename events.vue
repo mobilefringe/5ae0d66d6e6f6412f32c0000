@@ -23,7 +23,7 @@
 							
 							
 							<!--<p class="event_dates">{{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}</p>-->
-							<p v-if="promo.start_date | moment("MMM D", timezone) === promo.end_date | moment("MMM D", timezone)" class="event_dates">{{promo.start_date | moment("MMM D", timezone)}}</p>
+							<p v-if="promo.start_date | moment('MMM D', timezone) === promo.end_date | moment('MMM D', timezone)" class="event_dates">{{promo.start_date | moment("MMM D", timezone)}}</p>
 							<p v-else class="event_dates">{{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}</p>
 							
 							
