@@ -22,9 +22,9 @@
 							    <h3 class="event_store_name caps" v-if="locale=='en-ca'">{{promo.store.name}}</h3>
 							    <h3 class="event_store_name caps" v-else>{{promo.store.name_2}}</h3>
 							</div>
-							
 							<div class="event_thick_line"></div>
-							<p class="event_dates">{{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}</p>
+							<p class="event_dates" v-if="isMultiDay(promo)">{{ promo.start_date | moment("MMMM D", timezone)}} - {{ promo.end_date | moment("MMMM D", timezone)}}</p>
+                            <p class="event_dates" v-else>{{ promo.start_date | moment("MMMM D", timezone)}}</p>
 							<p class="event_desc"  v-if="locale=='en-ca'" >{{promo.description_short}}</p>
 							<p class="event_desc" v-else>{{promo.description_short_2}}</p>
 						
