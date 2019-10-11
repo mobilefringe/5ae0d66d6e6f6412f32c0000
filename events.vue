@@ -192,6 +192,7 @@
                     _.sortBy(temp_promo, [function(o) { return o.start_date; }]);
                     return temp_promo;
                 },
+                console.log(temp_promo)
             },
             methods: {
                 loadData: async function() {
