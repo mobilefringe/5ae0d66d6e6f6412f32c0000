@@ -2018,18 +2018,24 @@ strong, .bold {
 }
 
 .store_logo_container {
-    margin-bottom: 30px;
-    // width: 166px;
-    min-height: 170px;
+    // margin-bottom: 30px;
+    // // width: 166px;
+    // min-height: 170px;
+    // position: relative;
+    // // border: 3px solid #FFF;
+    // transition: all 0.3s ease;
+    // font-family: "LeagueGothic-Regular", sans-serif;
+    // font-size: 3.75rem;
+    // color: #000;
+    // text-align: center;
+    // vertical-align: middle;
+    // line-height: 160px;  
+    margin: 0;
+    padding: 1px;
     position: relative;
-    // border: 3px solid #FFF;
     transition: all 0.3s ease;
-    font-family: "LeagueGothic-Regular", sans-serif;
-    font-size: 3.75rem;
-    color: #000;
+    border: 1px solid $acc_grey;
     text-align: center;
-    vertical-align: middle;
-    line-height: 160px;  
     .store_img {
         max-width: 100%;
         position: relative;
