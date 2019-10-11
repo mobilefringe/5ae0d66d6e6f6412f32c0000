@@ -16,8 +16,8 @@
 					<h3 class="promo_name" style="margin: 20px auto 0px;"  v-else>{{currentEvent.name_2}}</h3>
 					<div class="row">
 						<p class="promo_div_date pull-left">{{currentEvent.start_date | moment("MMM D", timezone)}} - {{currentEvent.end_date | moment("MMM D", timezone)}}</p>
-						<!--<p class="promo_div_date pull-left" v-if="isMultiDay(promo)">{{ promo.start_date | moment("MMMM D", timezone)}} - {{ promo.end_date | moment("MMMM D", timezone)}}</p>-->
-      <!--                  <p class="promo_div_date pull-left" v-else>{{ promo.start_date | moment("MMMM D", timezone)}}</p>-->
+						<p class="promo_div_date pull-left" v-if="isMultiDay(currentEvent)">{{ promo.start_date | moment("MMMM D", timezone)}} - {{ promo.end_date | moment("MMMM D", timezone)}}</p>
+                        <p class="promo_div_date pull-left" v-else>{{ promo.start_date | moment("MMMM D", timezone)}}</p>
                             
 						<social-sharing :url="shareURL(currentEvent.slug)" :title="currentEvent.title" :description="currentEvent.description" :quote="currentEvent.description_short" twitter-user="parklandmallrd" :media="currentEvent.image_url" inline-template >
 							<div class="blog-social-share pull-right" style="margin: 15px auto;">
@@ -150,16 +150,16 @@
                     var share_url = "http://parklandmall.ca/event/" + slug;
                     return share_url;
                 },
-    //             isMultiDay(item) {
-				// 	var timezone = this.timezone
-				// 	var start_date = moment(item.start_date).tz(timezone).format("MM-DD-YYYY")
-				// 	var end_date = moment(item.end_date).tz(timezone).format("MM-DD-YYYY")
-				// 	if (start_date === end_date) {
-				// 		return false
-				// 	} else {
-				// 		return true
-				// 	}
-				// }
+                isMultiDay(item) {
+					var timezone = this.timezone
+					var start_date = moment(item.start_date).tz(timezone).format("MM-DD-YYYY")
+					var end_date = moment(item.end_date).tz(timezone).format("MM-DD-YYYY")
+					if (start_date === end_date) {
+						return false
+					} else {
+						return true
+					}
+				}
             }
         });
     });
