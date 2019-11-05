@@ -1,12 +1,14 @@
 define([], function() {
-    return [{
+    return [
+        {
             path: '/',
             component: view('home')
         },
         {
             path: '/stores',
             component: view('default'),
-            children: [{
+            children: [
+                {
                     path: '',
                     component: view('stores'),
                     name: 'storeList',
@@ -23,7 +25,8 @@ define([], function() {
         {
             path: '/promotions',
             component: view('default'),
-            children: [{
+            children: [
+                {
                     path: '',
                     component: view('promotions'),
                     name: 'promoList'
@@ -40,7 +43,8 @@ define([], function() {
         {
             path: '/events',
             component: view('default'),
-            children: [{
+            children: [
+                {
                     path: '',
                     component: view('events'),
                     name: 'eventList'
@@ -56,7 +60,8 @@ define([], function() {
         {
             path: '/jobs',
             component: view('default'),
-            children: [{
+            children: [
+                {
                     path: '',
                     component: view('jobs'),
                     name: 'jobList'
@@ -73,11 +78,13 @@ define([], function() {
             path: '/map',
             component: view('default'),
             redirect: '/404',
-            children: [{
-                path: '',
-                component: view('map'),
-                name: 'map'
-            }]
+            children: [
+                {
+                    path: '',
+                    component: view('map'),
+                    name: 'map'
+                }
+            ]
         },
         {
             path: '/hours',
@@ -93,61 +100,73 @@ define([], function() {
         {
             path: '/contest',
             component: view('default'),
-            children: [{
-                path: '',
-                component: view('contest'),
-                name: 'contestList'
-            }]
+            children: [
+                {
+                    path: '',
+                    component: view('contest'),
+                    name: 'contestList'
+                }
+            ]
         },
         {
             path: '/contact_us',
             component: view('default'),
-            children: [{
-                path: '',
-                component: view('contact_us'),
-                name: 'contactUs'
-            }]
+            children: [
+                {
+                    path: '',
+                    component: view('contact_us'),
+                    name: 'contactUs'
+                }
+            ]
         },
         {
             path: '/newsletter',
             component: view('default'),
-            children: [{
-                path: '',
-                component: view('newsletter'),
-                name: 'newsletter',
-                props: true
-            }]
+            children: [
+                {
+                    path: '',
+                    component: view('newsletter'),
+                    name: 'newsletter',
+                    props: true
+                }
+            ]
         },
         {
             path: '/pages',
             component: view('default'),
             redirect: '/404',
-            children: [{
-                path: ':id',
-                component: view('page_details'),
-                name: 'pageDetails',
-                props: true
-            }]
+            children: [
+                {
+                    path: ':id',
+                    component: view('page_details'),
+                    name: 'pageDetails',
+                    props: true
+                }
+            ]
         },
         {
             path: '/find_us',
             component: view('default'),
             redirect: '/404',
-            children: [{
-                path: '',
-                component: view('find_us'),
-                name: 'findUs'
-            }]
+            children: [
+                {
+                    path: '',
+                    component: view('find_us'),
+                    name: 'findUs'
+                }
+            ]
         },
         {
             path: '/kidz_club',
             component: view('default'),
             redirect: '/',
-            children: [{
-                path: '',
-                component: view('kidz_club'),
-                name: 'kidzClub'
-            }]
+            children: [
+                {
+                    path: '',
+                    component: view('kidz_club'),
+                    name: 'kidzClub'
+                }
+            ]
         },
         {
             path: '/404',
