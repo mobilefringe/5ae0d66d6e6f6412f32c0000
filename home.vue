@@ -77,6 +77,7 @@
                     // console.log("locale created", this.locale);
                     
                     this.meta = this.findMetaDataByPath(this.$route.path);
+                    console.log("this.property.mm_host", this.property.mm_host)
                 });
             },
             watch : {
