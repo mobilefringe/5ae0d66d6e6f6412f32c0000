@@ -167,7 +167,8 @@
                             this.$store.dispatch("getData", "feature_items"), 
                             this.$store.dispatch("getData", "promotions"), 
                             this.$store.dispatch("getData", "popups"), 
-                            this.$store.dispatch('LOAD_PAGE_DATA', { url: this.property.mm_host+"/api/v4/parklandmall/social.json" })
+                            // this.$store.dispatch('LOAD_PAGE_DATA', { url: this.property.mm_host+"/api/v4/parklandmall/social.json" })
+                            this.$store.dispatch('LOAD_PAGE_DATA', { url: "//parklandmall.mallmaverickstaging.com/api/v4/parklandmall/social.json" })
                         ]);
                         return results;
                     } catch (e) {
