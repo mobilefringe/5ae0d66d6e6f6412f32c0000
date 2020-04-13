@@ -66,30 +66,27 @@
             },
             created () {
                 this.loadData().then(response => {
-                    this.dataLoaded = true;
                     this.popup = this.$store.state.popups[0];
                     
-                    // console.log(response);
                     var socialFeed = response[4].data;
-                    // console.log("socialFeed", socialFeed);
                     var social_feed = socialFeed.social.instagram;
                     this.instaFeed = _.slice(social_feed, [0], [4]);
-                    // console.log("locale created", this.locale);
                     
                     this.meta = this.findMetaDataByPath(this.$route.path);
+                    
+                    this.dataLoaded = true;
                 });
             },
             watch : {
                 dataLoaded () {
                     var viewed = Cookies.get('popup_viewed');
-                    if(this.popup !== null && this.popup !== undefined && viewed !== "true") {
+                    if (this.popup !== null && this.popup !== undefined && viewed !== "true") {
                         Cookies.set('popup_viewed', "true");
                         viewed = Cookies.get('popup_viewed');
                         this.show_popup = true;
-                        this.popup.image_url = "//mallmaverick.cdn.speedyrails.net" + this.popup.photo_url;
+                        this.popup.image_url = "//assets.mallmaverick.com" + this.popup.photo_url;
                         document.getElementById('popup_backdrop').style.display = "block";
-                    }
-                    else {
+                    } else {
                         document.getElementById('popup_backdrop').style.display = "none";
                     }
                 },
