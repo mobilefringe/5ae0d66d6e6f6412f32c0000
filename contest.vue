@@ -1,7 +1,6 @@
 <template>
     <div class="page_container" id="contact_us_container" v-if="currentContest"> <!-- for some reason if you do not put an outer container div this component template will not render -->
         <div v-if="pageBanner" class="page_header" v-bind:style="{ backgroundImage: 'url(' + pageBanner.image_url + ')' }">
-			<!--http://via.placeholder.com/1920x300-->
 			<div class="site_container">
 				<div class="header_content">
 					<h1 v-if="locale=='en-ca'">{{currentContest.name}}</h1>
@@ -11,17 +10,13 @@
 		</div>
         <div class="site_container">
             <div class="row text-center">
-                    <img :src='currentContest.image_url' alt="contest image" class="image"  v-if="locale=='en-ca'">
-                    <img :src="'//mallmaverick.com'+currentContest.photo_2_url" alt="contest image" class="image"  v-else>
-                </div> 
+                <img :src='currentContest.image_url' alt="contest image" class="image"  v-if="locale=='en-ca'">
+                <img :src="'//assets.mallmaverick.com'+currentContest.photo_2_url" alt="contest image" class="image"  v-else>
+            </div> 
             <div class="row"> 
                 <div class="col-sm-12 contest_contents">
-                    <div class="description_text text_left" style="padding-top:40px" v-if="locale=='en-ca'" v-html="currentContest.rich_description">
-                        <!--{{currentContest.description}}-->
-                    </div>
-                    <div class="description_text text_left" style="padding-top:40px" v-else  v-html="currentContest.rich_description_2">
-                        <!--{{currentContest.description_2}}-->
-                    </div>
+                    <div class="description_text text_left" style="padding-top:40px" v-if="locale=='en-ca'" v-html="currentContest.rich_description"></div>
+                    <div class="description_text text_left" style="padding-top:40px" v-else v-html="currentContest.rich_description_2"></div>
                     <form class="form-horizontal padding_top_20" action="form-submit" v-on:submit.prevent="validateBeforeSubmit">
 						<div class="form-group ">
 							<div class="col-sm-6 col-xs-12" :class="{'has-error': errors.has('first_name')}">
@@ -80,7 +75,7 @@
 						    <div class="col-xs-12" :class="{'has-error': errors.has('agree_newsletter')}">
 						        <label class="checkbox">
                                     <input name="agree_newsletter" type="checkbox" v-model="form_data.agree_newsletter">
-                                        Yes, I would like to receive ongoing news related to events, promotions and special announcements from {{property.name}}
+                                    Yes, I would like to receive ongoing news related to events, promotions and special announcements from {{property.name}}
                                 </label>
 						    </div>
 						    <div class="col-xs-12">
@@ -94,7 +89,6 @@
 							</div>
 						</div>
 					</form>
-                    
                     <div id="send_contact_success" class="alert alert-success text-left" role="alert" v-show="formSuccess">
                         <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
                         <span class="sr-only">Success</span>
@@ -105,7 +99,6 @@
                         <span class="sr-only">Error:</span>
                         There was an error when trying to submit your request. Please try again later.
                     </div>
-                    
                 </div>
             </div>
             <div class="padding_top_40"></div>    
