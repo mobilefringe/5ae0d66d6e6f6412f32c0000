@@ -24,10 +24,7 @@
                 "name": "header.events",
                 "href": "/events" 
             },
-            {
-                "name": "header.press_releases",
-                "href": "/pages/parklandmall-press-releases"
-            },
+       
             {
                 "name": "header.healthy_strides",
                 "href": "/pages/parklandmall-healthy-strides"
