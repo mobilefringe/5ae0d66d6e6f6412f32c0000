@@ -79,7 +79,7 @@
                     
                     this.dataLoaded = true;
                 });
-                console.log(this.banners)
+                console.log(banners)
             },
             watch : {
                 dataLoaded () {
