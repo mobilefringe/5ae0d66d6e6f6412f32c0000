@@ -79,7 +79,6 @@
                     
                     this.dataLoaded = true;
                 });
-                console.log(banners)
             },
             watch : {
                 dataLoaded () {
@@ -121,6 +120,7 @@
                             }
                         }
                     })
+                    console.log(_.orderBy(banners, ['position'], ['asc']);)
                     return _.orderBy(banners, ['position'], ['asc']);
                 },
                 feature_items () {
