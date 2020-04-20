@@ -4,6 +4,9 @@
 			<div class="home-banner-container">
 				<slick ref="slick" :options="slickOptions">
 					<div class="" v-for="banner in banners" v-if="banners">
+					    <!--<div v-if="">-->
+					        
+					    <!--</div>-->
 						<div class="home-banner" v-lazy:background-image="banner.image_url"></div>
 					</div>
 				</slick>
@@ -76,6 +79,7 @@
                     
                     this.dataLoaded = true;
                 });
+                console.log(this.banners)
             },
             watch : {
                 dataLoaded () {
