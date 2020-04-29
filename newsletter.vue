@@ -24,7 +24,7 @@
                     		</div>
                     		<div class="form-group">
                                 <div class="col-xs-12">
-                					<div><label for="cm-privacy-consent"> <input aria-required="" id="cm-privacy-consent" name="cm-privacy-consent" required="" type="checkbox">I agree to be emailed</label></div>
+                					<div><label class="checkbox" for="cm-privacy-consent"> <input aria-required="" id="cm-privacy-consent" name="cm-privacy-consent" required="" type="checkbox">I agree to be emailed</label></div>
                 					<input id="cm-privacy-consent-hidden" name="cm-privacy-consent-hidden" type="hidden" value="true">
                 				</div>
                 			</div>
