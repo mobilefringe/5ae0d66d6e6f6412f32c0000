@@ -12,12 +12,12 @@
                 <div class="col-md-12 contact_contents">
                     <div>
                     	<form class="js-cm-form" id="subForm" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="92D4C54F0FEC16E5ADC2B1904DE9ED1A784F37613E32FEE3CD464815387D96C2B09750119836ACA3D9670C89A45608486B3A59848BC22C59DE7304A8B405ECFC">
-                    		<div class="form-group ">
+                    		<div class="form-group row">
                                 <div class="col-sm-6 col-xs-12" >
                     			    <label class="label" for="cm-name">Name </label><input aria-label="Name" class="form-control" id="fieldName" maxlength="200" name="cm-name">
                     			</div>
                     		</div>
-                    		<div class="form-group ">
+                    		<div class="form-group row">
                     			<div class="col-sm-6 col-xs-12">
                     			    <label class="label" for="cm-vltqi-vltqi">Email </label>
                     			    <input autocomplete="Email" aria-label="Email" class="form-control js-cm-email-input qa-input-email" id="fieldEmail" maxlength="200" name="cm-vltqi-vltqi" required="" type="email">
