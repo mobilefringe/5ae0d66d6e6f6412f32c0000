@@ -20,7 +20,6 @@
                     		<div class="form-group ">
                     			<div class="col-sm-6 col-xs-12">
                     			    <label>Email </label><input autocomplete="Email" aria-label="Email" class="js-cm-email-input qa-input-email" id="fieldEmail" maxlength="200" name="cm-vltqi-vltqi" required="" type="email">
-                    			    
                     			</div>
                     		</div>
                     			<div>
