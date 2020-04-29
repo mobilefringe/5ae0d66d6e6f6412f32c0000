@@ -19,7 +19,7 @@
                     		</div>
                     		<div class="form-group ">
                     			<div class="col-sm-6 col-xs-12">
-                    			    <label class="label" for="newsletter_email">Email </label><input autocomplete="Email" aria-label="Email" class="js-cm-email-input qa-input-email" id="fieldEmail" maxlength="200" name="cm-vltqi-vltqi" required="" type="email">
+                    			    <label class="label" for="cm-vltqi-vltqi">Email </label><input autocomplete="Email" aria-label="Email" class="js-cm-email-input qa-input-email" id="fieldEmail" maxlength="200" name="cm-vltqi-vltqi" required="" type="email">
                     			</div>
                     		</div>
                     		<div class="form-group">
