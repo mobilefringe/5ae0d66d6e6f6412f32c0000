@@ -11,7 +11,6 @@
             <div class="row"> 
                 <div class="col-md-12 contact_contents">
                     <div>
-                    	<h1 color="#000"></h1>
                     	<form class="js-cm-form" id="subForm" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="92D4C54F0FEC16E5ADC2B1904DE9ED1A784F37613E32FEE3CD464815387D96C2B09750119836ACA3D9670C89A45608486B3A59848BC22C59DE7304A8B405ECFC">
                     		<div>
                     			<div><label>Name </label><input aria-label="Name" id="fieldName" maxlength="200" name="cm-name"></div>
