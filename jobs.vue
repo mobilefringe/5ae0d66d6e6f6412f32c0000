@@ -64,8 +64,7 @@
 </template>
 
 <script>
-    define(["Vue", "vuex", "moment", "moment-timezone", "vue-moment", "vue-meta", "vue-lazy-load", "vue-paginate"], function(Vue, Vuex, moment, tz, VueMoment, Meta, VueLazyload, VuePaginate) {
-        Vue.use(Meta);
+    define(["Vue", "vuex", "moment", "moment-timezone", "vue-moment", "vue-lazy-load", "vue-paginate"], function(Vue, Vuex, moment, tz, VueMoment, VueLazyload, VuePaginate) {
         Vue.use(VueLazyload);
         Vue.use(VuePaginate);
         return Vue.component("promos-component", {
