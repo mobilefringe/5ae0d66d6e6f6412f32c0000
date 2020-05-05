@@ -44,6 +44,7 @@
       },
       beforeRouteUpdate (to, from, next) {
         this.meta = this.findMetaDataByPath(to.path);
+        this.$emit('updateHead')
         next();
       },
       computed: {
