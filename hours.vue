@@ -63,19 +63,13 @@
     }
 </style>
 <script>
-    define(["Vue", "vuex", "moment", "moment-timezone", "vue-moment", "vue-meta"], function(Vue, Vuex, moment, tz, VueMoment, Meta) {
-        Vue.use(Meta);
+    define(["Vue", "vuex", "moment", "moment-timezone", "vue-moment"], function(Vue, Vuex, moment, tz, VueMoment) {
         return Vue.component("hours-component", {
             template: template, // the variable template will be injected
             props:['locale'],
             data: function() {
                 return {
-                    pageBanner : null,
-                    meta: {
-                        meta_title: "",
-                        meta_description: "",
-                        meta_keywords: ""
-                    }
+                    pageBanner : null
                 }
             },
             created() {
@@ -85,8 +79,6 @@
                     if(temp_repo) {
                         this.pageBanner = temp_repo.images[0];
                     }
-                   
-                   this.meta = this.findMetaDataByPath(this.$route.path);
                 });
                 
             },
@@ -124,15 +116,6 @@
                         console.log("Error loading data: " + e.message);
                     }
                 },
-            },
-            metaInfo () {
-                return {
-                    title: this.meta.meta_title,
-                    meta: [
-                        {name: 'description', content: this.meta.meta_description},
-                        {name: 'keywords', content: this.meta.meta_keywords}
-                    ] 
-                }
             }
         });
     });
