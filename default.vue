@@ -40,7 +40,7 @@
           // access to component instance via `vm`
           vm.meta = vm.findMetaDataByPath(to.path);
           vm.$emit('updateHead')
-          console.log('vm.meta', vm.meta, 'to.path')
+          console.log('vm.meta', vm.meta, 'to.path', to.path)
         })
       },
       beforeRouteUpdate (to, from, next) {
