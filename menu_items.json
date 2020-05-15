@@ -53,6 +53,10 @@
         ]
     },
     {
+        "name": "Re-Opening",
+        "href": "/pages/parklandmall-re-opening"
+    },
+    {
         "name": "header.contact_us",
         "href": "/contact_us",
         "sub_menu": [
